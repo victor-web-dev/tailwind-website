@@ -16,7 +16,7 @@
     <!----------------------------------- Navigation Menu with fixed position ----------------------------------->
     <header>
       <nav
-        class="flex justify-evenly items-center fixed top-0 w-screen bg-[#252B42] md:bg-transparent"
+        class="flex justify-evenly items-center fixed top-0 w-screen bg-[#252B42] md:bg-transparent text-white"
       >
         <div class="p-8">
           <a href="#" class="font-bold text-2xl text-white">BrandName</a>
@@ -63,32 +63,44 @@
     </header>
     <!----------------------------------- Start of First Section or Hero Banner ----------------------------------->
     <main>
-      <section id="section1">
-        <div class="d-grid container text-left">
-          <div class="row">
-            <h1 class="col display-1">We Ensure A Best Insurance Service</h1>
-            <div class="col"><span> </span></div>
+      <section
+        class="bg-[url('./assets/hero.jpg')] bg-no-repeat bg-cover h-[670px]"
+      >
+        <div
+          class="grid grid-rows-3 grid-cols-2 bg-gradient-to-r from-black to-transparent h-full text-white pt-24"
+        >
+          <div
+            class="col-span-1 row-span-1 row-start-1 row-end-2 col-start-1 col-end-2 self-center"
+          >
+            <h1 class="font-extrabold text-6xl">
+              We Ensure A Best Insurance Service
+            </h1>
           </div>
-          <div class="row">
-            <p class="col fs-5">
+          <div
+            class="col-span-1 row-span-1 row-start-2 row-end-3 col-start-1 col-end-2 self-center"
+          >
+            <p class="text-xl">
               We know how large objects will act, but things on a small scale
             </p>
-            <div class="col"><span> </span></div>
           </div>
 
-          <div class="row fs-5 row-cols-1 row-cols-md-2">
-            <div class="col">
-              <a
-                class="btn btn-primary h-100"
-                style="border-radius: 100px; width: 30%"
-                href="#"
-                >Get Quote Now</a
+          <div
+            class="col-span-1 row-span-1 row-start-3 row-end-4 col-start-1 col-end-2 self-center"
+          >
+            <div class="">
+              <a class="mr-2" href="#"
+                ><button class="bg-[#23A6F0] text-white py-3 px-4 rounded-full">
+                  Get Quote Now
+                </button></a
               >
-              <a class="btn btn-secondary" style="width: 30%" href="#"
-                >Learn More</a
+              <a class="" href="#"
+                ><button
+                  class="p-3.5 rounded-full border border-solid border-white py-3 px-4"
+                >
+                  Learn More
+                </button></a
               >
             </div>
-            <div class="col"><span> </span></div>
           </div>
         </div>
       </section>
