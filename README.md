@@ -1,4 +1,4 @@
-# Responsive Yoga Website
+# Responsive Tailwind Website
 
 - Project made for the Responsive course at Tamwood College
 - Practices with Tailwind Css
