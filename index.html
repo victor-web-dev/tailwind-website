@@ -1,592 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com" defer></script>
-    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries" defer></script> -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
-    
-    <title>Tailwind Website</title>
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+  </style>
+
+  <title>Tailwind Website</title>
+</head>
 
 <body>
-
-    <!----------------------------------- Navigation Menu with fixed position ----------------------------------->
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top d-md-flex flex-lg-row justify-content-evenly align-items-center ">
-            <div class="container-fluid align-items-center">
-                <a class="navbar-brand" href="#">BrandName</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse text-center ms-auto" id="navbarText">
-                    <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                    </ul> -->
-                    <ul class="navbar-nav text-light d-block d-md-flex w-100">
-                        <li class="p-2 nav-item me-auto">Home</li>
-                        <li class="p-2 nav-item me-auto">Product</li>
-                        <li class="p-2 nav-item me-auto">Pricing</li>
-                        <li class="p-2 nav-item me-auto">Contact</li>
-                        <li class="p-2 nav-item me-auto">Login</li>
-                        <li class="p-2"><a class="p-2 btn btn-primary" href="#">Become a member &#10142</a></li>
-                    </ul>
-                    <!-- <div class="d-flex flex-lg-row ms-auto">
-                        <p class="p-2  nav-item">Login</p>
-                        <a class="p-2 btn btn-primary  nav-item" href="#">Become a member &#10142</a>
-                    </div> -->
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!----------------------------------- Start of First Section or Hero Banner ----------------------------------->
-    <main>
-        <section id="section1">
-            <div class="d-grid container text-left">
-                <div class="row">
-                    <h1 class="col display-1">We Ensure A Best Insurance Service</h1>
-                    <div class="col"><span> </span></div>
-                </div>
-                <div class="row">
-                    <p class="col fs-5">We know how large objects will act, but things on a small scale</p>
-                    <div class="col"><span> </span></div>
-                </div>
-
-                <div class="row fs-5 row-cols-1 row-cols-md-2">
-                    <div class="col">
-                        <a class="btn btn-primary h-100" style="border-radius: 100px; width: 30%;" href="#">Get
-                            Quote Now</a>
-                        <a class="btn btn-secondary" style="width: 30%" href="#">Learn More</a>
-                    </div>
-                    <div class="col"><span> </span></div>
-                </div>
-            </div>
-        </section>
-        <!---------------------------------------------- Start of Second Section   ----------------------------------------------->
-        <section id="section2">
-            <div class="card-group">
-                <div class="card text-center text-light" id="card">
-                    <img src="./assets/wallet.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title" id="card-title">Peace of Mind</h5>
-                        <p class="card-text">So it really behaves like neither. Now we have given up.</p>
-                    </div>
-                </div>
-                <div class="card text-center text-light" id="card">
-                    <img src="./assets/bookmark.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title" id="card-title">Set For Life</h5>
-                        <p class="card-text">They were used to create machines that launched.</p>
-                    </div>
-                </div>
-                <div class="card text-center text-light" id="card">
-                    <img src="./assets/persons.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title" id="card-title">100% Satisfaction</h5>
-                        <p class="card-text">So it really behaves like neither. Now we have given up.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!---------------------------------------------- Start of Third Section   ----------------------------------------------->
-        <section class= "align-self-center" style="background-color: rgb(142, 194, 242)">
-            <div class="d-flex flex-column py-5">
-                <h1 class="text-center text-light pb-5">
-                    Industry
-                </h1>
-                <p class="text-center text-light w-50 mx-auto">
-                    Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian
-                    mechanics
-                </p>
-
-            </div>
-            <div class="card-group flex-row justify-content-evenly">
-                <div class="d-flex card2 position-relative" style="max-width: 500px;">
-                    <img class="position-absolute top-150 start-50 translate-middle" src="./assets/person1.png" alt=""
-                        style="max-width: 70px; height: 70px;">
-                    <div class="card-body2">
-                        <h5 class="card-title text-start">Regina Miles</h5>
-                        <p class="card-text text-start">Designer</p>
-                        <img src="./assets/4stars.jpg" class="card-img-top d-flex justify-content-start mw-100"
-                            alt="..." style="width: 180px; margin-left: -20px;">
-                        <p class="card-text text-start">This proved to be impossible using the traditional
-                            concepts of space and time. Einstein developed a
-                            new view of time first and then space. This proved
-                            to be impossible using the traditional concepts of
-                            space and time. Einstein developed a new view
-                            of time first and then space.</p>
-                    </div>
-                </div>
-                <div class="d-flex card2 position-relative" style="max-width: 500px;">
-                    <img class="position-absolute top-150 start-50 translate-middle" src="./assets/person2.png" alt=""
-                        style="max-width: 70px; height: 70px; top: 20px;">
-                    <div class="card-body2">
-                        <h5 class="card-title text-start">Regina Miles</h5>
-                        <p class="card-text text-start">Designer</p>
-                        <img src="./assets/4stars.jpg" class="card-img-top d-flex justify-content-start mw-100"
-                            alt="..." style="width: 180px; margin-left: -20px;">
-                        <p class="card-text text-start">This proved to be impossible using the traditional
-                            concepts of space and time. Einstein developed a
-                            new view of time first and then space. This proved
-                            to be impossible using the traditional concepts of
-                            space and time. Einstein developed a new view
-                            of time first and then space.</p>
-                    </div>
-                </div>
-            </div>
-      </section>
-      <!---------------------------------------------- Start of Fourth Section   ----------------------------------------------->
-      <section class="py-5" style="background-color: #252b42">
-        <div class="container text-center text-wrap pb-5 text-light">
-          <h2>Industry</h2>
-          <p style="width: 29rem" class="mx-auto">
-            Problems trying to resolve the conflict between the two major realms
-            of Classical physics: Newtonian mechanics
-          </p>
-        </div>
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-          <div class="card text-bg-dark" style="width: 20rem">
-            <img
-              src="./assets/img/post.1.jpg"
-              class="card-img opacity-50"
-              style="height: 27rem"
-              alt="..."
-            />
-            <div class="card-img-overlay d-flex align-items-end">
-              <div class="text-light">
-                <h5 class="card-title">Tax Management</h5>
-                <p class="card-text">
-                  Life Tips From Top Ten Adventure Travelers
-                </p>
-                <button class="btn btn-primary btn-md rounded-pill">
-                  View Project
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="card text-bg-dark" style="width: 20rem">
-            <img
-              src="./assets/img/post.2.jpg"
-              class="card-img opacity-50"
-              style="height: 27rem"
-              alt="..."
-            />
-            <div class="card-img-overlay d-flex align-items-end">
-              <div class="text-light">
-                <h5 class="card-title">Tax Management</h5>
-                <p class="card-text">
-                  Life Tips From Top Ten Adventure Travelers
-                </p>
-                <button class="btn btn-primary btn-md rounded-pill">
-                  View Project
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="card text-bg-dark" style="width: 20rem">
-            <img
-              src="./assets/img/post.3.jpg"
-              class="card-img opacity-50"
-              style="height: 27rem"
-              alt="..."
-            />
-            <div class="card-img-overlay d-flex align-items-end">
-              <div class="text-light">
-                <h5 class="card-title">Tax Management</h5>
-                <p class="card-text">
-                  Life Tips From Top Ten Adventure Travelers
-                </p>
-                <button class="btn btn-primary btn-md rounded-pill">
-                  View Project
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="card text-bg-dark" style="width: 20rem">
-            <img
-              src="./assets/img/post.4.jpg"
-              class="card-img opacity-50"
-              style="height: 27rem"
-              alt="..."
-            />
-            <div class="card-img-overlay d-flex align-items-end">
-              <div class="text-light">
-                <h5 class="card-title">Tax Management</h5>
-                <p class="card-text">
-                  Life Tips From Top Ten Adventure Travelers
-                </p>
-                <button class="btn btn-primary btn-md rounded-pill">
-                  View Project
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!---------------------------------------------- Start of Fifth Section   ----------------------------------------------->
-      <section class="py-5" style="background-color: #252b42">
-        <div class="container text-center text-wrap pb-5 text-light">
-          <h2>Pricing</h2>
-          <p style="width: 29rem" class="mx-auto">
-            Problems trying to resolve the conflict between the two major realms
-            of Classical physics: Newtonian mechanics
-          </p>
-        </div>
-        <section
-          class="container d-flex gap-3 flex-wrap justify-content-center"
-        >
-          <div class="card text-center py-5 px-4" style="width: 22rem">
-            <div class="pb-4">
-              <h2 class="card-title fw-bold text-uppercase fs-4">Free</h2>
-              <p class="card-text w-50 text-center mx-auto text-secondary">
-                Organize across all apps by hand
-              </p>
-              <div class="card-text">
-                <p class="fs-2 fw-bold text-info mb-0">0$</p>
-                <p class="text-info">Per Month</p>
-              </div>
-              <button
-                class="btn w-100 py-3 text-light"
-                style="background-color: #23a6f0"
-              >
-                Try for free
-              </button>
-            </div>
-            <div class="mx-auto">
-              <ul class="list-unstyled d-flex flex-column align-items-start">
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC"
-                  />Unlimited product updates
-                </li>
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC"
-                  />Unlimited product updates
-                </li>
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC"
-                  />
-                  Unlimited product updates
-                </li>
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADeElEQVRoQ+1ZW27aQBQdGwk+mx3UrKDJCkpXELqCYhEF+AqsoGQFJV+YCGS6gtAVlKwg6QpCd0A/g4Tdc92xCsaPO2ZMgpT5iVDu3DnnvmdsiCNfxpHjF28EXtqD2jxw696e+p5/LnxxClIWfEt//y9fPOLHwhf+3CyZ95f2Jf3ee+1FYOgOLdMzrwCqbgjDUkGDPQvsmXmmd9OxOwuVvZuyuQi4rnuy8lZfoaib9+DIvkHZLF/btr1U1adMYDQe1REeLg46UT0sQ36J8LNbF62Zil4lAqPJ6JtGqyfhHLSarR6XBItAEDLrlQvL17mK95FDfkwrZqXHCSkWAYTN3aHAh8SJRLvZtrMMkUnAGTsDwzCushQV8X/f92/aF+3UQpFKQCbsXRHg2Dp98TktsRMJyFL5VEC1YWOXgkuU2GpSPiQSeMnQiTJMC6VYArLDkvVfzULHrsZ17FgCB7L+PazzUcFC1+gP/ah8PIGJ86Q62ygAEei435GYjeFk2DCFSV09c9HshLJazSQgp8qHTI15BST4cLsKCcM0zqJT7I4HMC6Qm2hQ078i4MMDELI/0WtqjAN7CKPBptwOASibQdk5Q5maSBL4ieMiXBscZahGP9DYtsaZXQ+MRw87lxGO9jQZDeAD9bgUIXfOUj2AEPIV8GZXEl3gJSiE0JbR43KARcATnt1pdqYYN6bw2JdY0prB0xlaCITgQ9CxJAoAr4UAEmmORPoUtfgWiYLAswg4E+cRVeFDek7Gz+oBCXIzmlR0P/Syq03S2Whmv9DMtl47cpdR7oWDwOgAHxQhVhlVaGQcErrAS69kNzLVUSKNhGbwgjVKEFPE8gKl8T23H8SR0A0eTew3csuKYtI2Tm+S0A7+H2r+OJ33QkMk6CTubMP1MMkpXWhkGCV3WJWTNcgqXynpTPmYRbnwTgOG/Cp88adcKlvKl3rpBXoHPc5nldBkB7ofx3po74etUGvqxJk/ONJ3JsxTrDIaFZL5MEgcm3WTAHjEfVfb4+4hw4kTNpv2ynzcjRo3eC8Vgkqs3uqEagO9jUI/cIRkKKSe1899Xa/WZPVKqdLnhEyuHEgKcerYxtroovNSuWXPToE+zDbYM0WHnR78I18cITnF1mDNGoBZ0UsRXUYAegGvzTFVzl/FZ1bdxSePPuUkznNIkXveCBRpXY7uv4T3t0CuqWv0AAAAAElFTkSuQmCC"
-                  />
-                  1GB Cloud storage
-                </li>
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADeElEQVRoQ+1ZW27aQBQdGwk+mx3UrKDJCkpXELqCYhEF+AqsoGQFJV+YCGS6gtAVlKwg6QpCd0A/g4Tdc92xCsaPO2ZMgpT5iVDu3DnnvmdsiCNfxpHjF28EXtqD2jxw696e+p5/LnxxClIWfEt//y9fPOLHwhf+3CyZ95f2Jf3ee+1FYOgOLdMzrwCqbgjDUkGDPQvsmXmmd9OxOwuVvZuyuQi4rnuy8lZfoaib9+DIvkHZLF/btr1U1adMYDQe1REeLg46UT0sQ36J8LNbF62Zil4lAqPJ6JtGqyfhHLSarR6XBItAEDLrlQvL17mK95FDfkwrZqXHCSkWAYTN3aHAh8SJRLvZtrMMkUnAGTsDwzCushQV8X/f92/aF+3UQpFKQCbsXRHg2Dp98TktsRMJyFL5VEC1YWOXgkuU2GpSPiQSeMnQiTJMC6VYArLDkvVfzULHrsZ17FgCB7L+PazzUcFC1+gP/ah8PIGJ86Q62ygAEei435GYjeFk2DCFSV09c9HshLJazSQgp8qHTI15BST4cLsKCcM0zqJT7I4HMC6Qm2hQ078i4MMDELI/0WtqjAN7CKPBptwOASibQdk5Q5maSBL4ieMiXBscZahGP9DYtsaZXQ+MRw87lxGO9jQZDeAD9bgUIXfOUj2AEPIV8GZXEl3gJSiE0JbR43KARcATnt1pdqYYN6bw2JdY0prB0xlaCITgQ9CxJAoAr4UAEmmORPoUtfgWiYLAswg4E+cRVeFDek7Gz+oBCXIzmlR0P/Syq03S2Whmv9DMtl47cpdR7oWDwOgAHxQhVhlVaGQcErrAS69kNzLVUSKNhGbwgjVKEFPE8gKl8T23H8SR0A0eTew3csuKYtI2Tm+S0A7+H2r+OJ33QkMk6CTubMP1MMkpXWhkGCV3WJWTNcgqXynpTPmYRbnwTgOG/Cp88adcKlvKl3rpBXoHPc5nldBkB7ofx3po74etUGvqxJk/ONJ3JsxTrDIaFZL5MEgcm3WTAHjEfVfb4+4hw4kTNpv2ynzcjRo3eC8Vgkqs3uqEagO9jUI/cIRkKKSe1899Xa/WZPVKqdLnhEyuHEgKcerYxtroovNSuWXPToE+zDbYM0WHnR78I18cITnF1mDNGoBZ0UsRXUYAegGvzTFVzl/FZ1bdxSePPuUkznNIkXveCBRpXY7uv4T3t0CuqWv0AAAAAElFTkSuQmCC"
-                  />
-                  Email and community support
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="card text-center py-5 px-4" style="width: 22rem">
-            <span
-              class="position-absolute top-0 translate-middle badge rounded-circle py-4 px-2 fw-bold fs-4"
-              style="left: 80%; background-color: #e77c40"
-            >
-              New
-            </span>
-
-            <div class="pb-4">
-              <h2 class="card-title fw-bold fs-4">Silver</h2>
-              <p class="card-text w-50 text-center mx-auto text-secondary">
-                Organize across all apps by hand
-              </p>
-              <div class="card-text">
-                <p class="fs-2 fw-bold text-info mb-0">9.99$</p>
-                <p class="text-info">Per Month</p>
-              </div>
-              <button
-                class="btn w-100 py-3 text-light"
-                style="background-color: #23a6f0"
-              >
-                Try for free
-              </button>
-            </div>
-            <div class="mx-auto">
-              <ul class="list-unstyled d-flex flex-column align-items-start">
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC"
-                  />Unlimited product updates
-                </li>
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC"
-                  />Unlimited product updates
-                </li>
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC"
-                  />
-                  Unlimited product updates
-                </li>
-                <li></li>
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADeElEQVRoQ+1ZW27aQBQdGwk+mx3UrKDJCkpXELqCYhEF+AqsoGQFJV+YCGS6gtAVlKwg6QpCd0A/g4Tdc92xCsaPO2ZMgpT5iVDu3DnnvmdsiCNfxpHjF28EXtqD2jxw696e+p5/LnxxClIWfEt//y9fPOLHwhf+3CyZ95f2Jf3ee+1FYOgOLdMzrwCqbgjDUkGDPQvsmXmmd9OxOwuVvZuyuQi4rnuy8lZfoaib9+DIvkHZLF/btr1U1adMYDQe1REeLg46UT0sQ36J8LNbF62Zil4lAqPJ6JtGqyfhHLSarR6XBItAEDLrlQvL17mK95FDfkwrZqXHCSkWAYTN3aHAh8SJRLvZtrMMkUnAGTsDwzCushQV8X/f92/aF+3UQpFKQCbsXRHg2Dp98TktsRMJyFL5VEC1YWOXgkuU2GpSPiQSeMnQiTJMC6VYArLDkvVfzULHrsZ17FgCB7L+PazzUcFC1+gP/ah8PIGJ86Q62ygAEei435GYjeFk2DCFSV09c9HshLJazSQgp8qHTI15BST4cLsKCcM0zqJT7I4HMC6Qm2hQ078i4MMDELI/0WtqjAN7CKPBptwOASibQdk5Q5maSBL4ieMiXBscZahGP9DYtsaZXQ+MRw87lxGO9jQZDeAD9bgUIXfOUj2AEPIV8GZXEl3gJSiE0JbR43KARcATnt1pdqYYN6bw2JdY0prB0xlaCITgQ9CxJAoAr4UAEmmORPoUtfgWiYLAswg4E+cRVeFDek7Gz+oBCXIzmlR0P/Syq03S2Whmv9DMtl47cpdR7oWDwOgAHxQhVhlVaGQcErrAS69kNzLVUSKNhGbwgjVKEFPE8gKl8T23H8SR0A0eTew3csuKYtI2Tm+S0A7+H2r+OJ33QkMk6CTubMP1MMkpXWhkGCV3WJWTNcgqXynpTPmYRbnwTgOG/Cp88adcKlvKl3rpBXoHPc5nldBkB7ofx3po74etUGvqxJk/ONJ3JsxTrDIaFZL5MEgcm3WTAHjEfVfb4+4hw4kTNpv2ynzcjRo3eC8Vgkqs3uqEagO9jUI/cIRkKKSe1899Xa/WZPVKqdLnhEyuHEgKcerYxtroovNSuWXPToE+zDbYM0WHnR78I18cITnF1mDNGoBZ0UsRXUYAegGvzTFVzl/FZ1bdxSePPuUkznNIkXveCBRpXY7uv4T3t0CuqWv0AAAAAElFTkSuQmCC"
-                  />
-                  1GB Cloud storage
-                </li>
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADeElEQVRoQ+1ZW27aQBQdGwk+mx3UrKDJCkpXELqCYhEF+AqsoGQFJV+YCGS6gtAVlKwg6QpCd0A/g4Tdc92xCsaPO2ZMgpT5iVDu3DnnvmdsiCNfxpHjF28EXtqD2jxw696e+p5/LnxxClIWfEt//y9fPOLHwhf+3CyZ95f2Jf3ee+1FYOgOLdMzrwCqbgjDUkGDPQvsmXmmd9OxOwuVvZuyuQi4rnuy8lZfoaib9+DIvkHZLF/btr1U1adMYDQe1REeLg46UT0sQ36J8LNbF62Zil4lAqPJ6JtGqyfhHLSarR6XBItAEDLrlQvL17mK95FDfkwrZqXHCSkWAYTN3aHAh8SJRLvZtrMMkUnAGTsDwzCushQV8X/f92/aF+3UQpFKQCbsXRHg2Dp98TktsRMJyFL5VEC1YWOXgkuU2GpSPiQSeMnQiTJMC6VYArLDkvVfzULHrsZ17FgCB7L+PazzUcFC1+gP/ah8PIGJ86Q62ygAEei435GYjeFk2DCFSV09c9HshLJazSQgp8qHTI15BST4cLsKCcM0zqJT7I4HMC6Qm2hQ078i4MMDELI/0WtqjAN7CKPBptwOASibQdk5Q5maSBL4ieMiXBscZahGP9DYtsaZXQ+MRw87lxGO9jQZDeAD9bgUIXfOUj2AEPIV8GZXEl3gJSiE0JbR43KARcATnt1pdqYYN6bw2JdY0prB0xlaCITgQ9CxJAoAr4UAEmmORPoUtfgWiYLAswg4E+cRVeFDek7Gz+oBCXIzmlR0P/Syq03S2Whmv9DMtl47cpdR7oWDwOgAHxQhVhlVaGQcErrAS69kNzLVUSKNhGbwgjVKEFPE8gKl8T23H8SR0A0eTew3csuKYtI2Tm+S0A7+H2r+OJ33QkMk6CTubMP1MMkpXWhkGCV3WJWTNcgqXynpTPmYRbnwTgOG/Cp88adcKlvKl3rpBXoHPc5nldBkB7ofx3po74etUGvqxJk/ONJ3JsxTrDIaFZL5MEgcm3WTAHjEfVfb4+4hw4kTNpv2ynzcjRo3eC8Vgkqs3uqEagO9jUI/cIRkKKSe1899Xa/WZPVKqdLnhEyuHEgKcerYxtroovNSuWXPToE+zDbYM0WHnR78I18cITnF1mDNGoBZ0UsRXUYAegGvzTFVzl/FZ1bdxSePPuUkznNIkXveCBRpXY7uv4T3t0CuqWv0AAAAAElFTkSuQmCC"
-                  />
-                  Email and community support
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="card text-center py-5 px-4" style="width: 22rem">
-            <div class="pb-4">
-              <h2 class="card-title fw-bold text-uppercase fs-4">Gold</h2>
-              <p class="card-text w-50 text-center mx-auto text-secondary">
-                Organize across all apps by hand
-              </p>
-              <div class="card-text">
-                <p class="fs-2 fw-bold text-info mb-0">19.99$</p>
-                <p class="text-info">Per Month</p>
-              </div>
-              <button
-                class="btn w-100 py-3 text-light"
-                style="background-color: #23a6f0"
-              >
-                Try for free
-              </button>
-            </div>
-            <div class="mx-auto">
-              <ul class="list-unstyled d-flex flex-column align-items-start">
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC"
-                  />Unlimited product updates
-                </li>
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC"
-                  />Unlimited product updates
-                </li>
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC"
-                  />
-                  Unlimited product updates
-                </li>
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADeElEQVRoQ+1ZW27aQBQdGwk+mx3UrKDJCkpXELqCYhEF+AqsoGQFJV+YCGS6gtAVlKwg6QpCd0A/g4Tdc92xCsaPO2ZMgpT5iVDu3DnnvmdsiCNfxpHjF28EXtqD2jxw696e+p5/LnxxClIWfEt//y9fPOLHwhf+3CyZ95f2Jf3ee+1FYOgOLdMzrwCqbgjDUkGDPQvsmXmmd9OxOwuVvZuyuQi4rnuy8lZfoaib9+DIvkHZLF/btr1U1adMYDQe1REeLg46UT0sQ36J8LNbF62Zil4lAqPJ6JtGqyfhHLSarR6XBItAEDLrlQvL17mK95FDfkwrZqXHCSkWAYTN3aHAh8SJRLvZtrMMkUnAGTsDwzCushQV8X/f92/aF+3UQpFKQCbsXRHg2Dp98TktsRMJyFL5VEC1YWOXgkuU2GpSPiQSeMnQiTJMC6VYArLDkvVfzULHrsZ17FgCB7L+PazzUcFC1+gP/ah8PIGJ86Q62ygAEei435GYjeFk2DCFSV09c9HshLJazSQgp8qHTI15BST4cLsKCcM0zqJT7I4HMC6Qm2hQ078i4MMDELI/0WtqjAN7CKPBptwOASibQdk5Q5maSBL4ieMiXBscZahGP9DYtsaZXQ+MRw87lxGO9jQZDeAD9bgUIXfOUj2AEPIV8GZXEl3gJSiE0JbR43KARcATnt1pdqYYN6bw2JdY0prB0xlaCITgQ9CxJAoAr4UAEmmORPoUtfgWiYLAswg4E+cRVeFDek7Gz+oBCXIzmlR0P/Syq03S2Whmv9DMtl47cpdR7oWDwOgAHxQhVhlVaGQcErrAS69kNzLVUSKNhGbwgjVKEFPE8gKl8T23H8SR0A0eTew3csuKYtI2Tm+S0A7+H2r+OJ33QkMk6CTubMP1MMkpXWhkGCV3WJWTNcgqXynpTPmYRbnwTgOG/Cp88adcKlvKl3rpBXoHPc5nldBkB7ofx3po74etUGvqxJk/ONJ3JsxTrDIaFZL5MEgcm3WTAHjEfVfb4+4hw4kTNpv2ynzcjRo3eC8Vgkqs3uqEagO9jUI/cIRkKKSe1899Xa/WZPVKqdLnhEyuHEgKcerYxtroovNSuWXPToE+zDbYM0WHnR78I18cITnF1mDNGoBZ0UsRXUYAegGvzTFVzl/FZ1bdxSePPuUkznNIkXveCBRpXY7uv4T3t0CuqWv0AAAAAElFTkSuQmCC"
-                  />
-                  1GB Cloud storage
-                </li>
-                <li>
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADeElEQVRoQ+1ZW27aQBQdGwk+mx3UrKDJCkpXELqCYhEF+AqsoGQFJV+YCGS6gtAVlKwg6QpCd0A/g4Tdc92xCsaPO2ZMgpT5iVDu3DnnvmdsiCNfxpHjF28EXtqD2jxw696e+p5/LnxxClIWfEt//y9fPOLHwhf+3CyZ95f2Jf3ee+1FYOgOLdMzrwCqbgjDUkGDPQvsmXmmd9OxOwuVvZuyuQi4rnuy8lZfoaib9+DIvkHZLF/btr1U1adMYDQe1REeLg46UT0sQ36J8LNbF62Zil4lAqPJ6JtGqyfhHLSarR6XBItAEDLrlQvL17mK95FDfkwrZqXHCSkWAYTN3aHAh8SJRLvZtrMMkUnAGTsDwzCushQV8X/f92/aF+3UQpFKQCbsXRHg2Dp98TktsRMJyFL5VEC1YWOXgkuU2GpSPiQSeMnQiTJMC6VYArLDkvVfzULHrsZ17FgCB7L+PazzUcFC1+gP/ah8PIGJ86Q62ygAEei435GYjeFk2DCFSV09c9HshLJazSQgp8qHTI15BST4cLsKCcM0zqJT7I4HMC6Qm2hQ078i4MMDELI/0WtqjAN7CKPBptwOASibQdk5Q5maSBL4ieMiXBscZahGP9DYtsaZXQ+MRw87lxGO9jQZDeAD9bgUIXfOUj2AEPIV8GZXEl3gJSiE0JbR43KARcATnt1pdqYYN6bw2JdY0prB0xlaCITgQ9CxJAoAr4UAEmmORPoUtfgWiYLAswg4E+cRVeFDek7Gz+oBCXIzmlR0P/Syq03S2Whmv9DMtl47cpdR7oWDwOgAHxQhVhlVaGQcErrAS69kNzLVUSKNhGbwgjVKEFPE8gKl8T23H8SR0A0eTew3csuKYtI2Tm+S0A7+H2r+OJ33QkMk6CTubMP1MMkpXWhkGCV3WJWTNcgqXynpTPmYRbnwTgOG/Cp88adcKlvKl3rpBXoHPc5nldBkB7ofx3po74etUGvqxJk/ONJ3JsxTrDIaFZL5MEgcm3WTAHjEfVfb4+4hw4kTNpv2ynzcjRo3eC8Vgkqs3uqEagO9jUI/cIRkKKSe1899Xa/WZPVKqdLnhEyuHEgKcerYxtroovNSuWXPToE+zDbYM0WHnR78I18cITnF1mDNGoBZ0UsRXUYAegGvzTFVzl/FZ1bdxSePPuUkznNIkXveCBRpXY7uv4T3t0CuqWv0AAAAAElFTkSuQmCC"
-                  />
-                  Email and community support
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </section>
-      <!---------------------------------------------- Start of Sixth Section   ----------------------------------------------->
-      <section
-        class="py-5"
-        style="
-          background: url(./assets/img/contact-cover.1.jpg) no-repeat;
-          background-size: cover;
-        "
-      >
-        <div class="container text-center text-md-start">
-          <h6>Contact Us</h6>
-          <h2>Make an Appointment</h2>
-          <form class="d-grid mt-5 px-5 px-md-0">
-            <div class="p-2 col-12 col-md-6 gap-4">
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <input
-                    class="w-100 mb-2 p-2 mx-0 border-0 rounded"
-                    type="text"
-                    placeholder="Full Name*"
-                    required
-                  />
-                </div>
-
-                <div class="col-12 col-md-6">
-                  <input
-                    class="w-100 mb-2 p-2 rounded border-0"
-                    type="email"
-                    name=""
-                    id=""
-                    placeholder="Email*"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <select
-                    name=""
-                    id=""
-                    class="w-100 p-2 mb-2 bg-white rounded border-0"
-                  >
-                    <option value="" disabled selected>Please select</option>
-                  </select>
-                </div>
-
-                <div class="col-12 col-md-6">
-                  <select
-                    class="w-100 p-2 bg-white rounded border-0"
-                    name=""
-                    id=""
-                  >
-                    <option value="" selected disabled>4:00 Available</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <textarea
-                  name=""
-                  id=""
-                  style="height: 140px; resize: none"
-                  class="rounded border-0 mt-3"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <div class="row mt-3">
-                <button class="btn btn-primary align-self-start col-6">
-                  Book Appointment
-                </button>
-              </div>
-            </div>
-            <div class="col-12 col-md-6"></div>
-          </form>
-        </div>
-      </section>
-      <section
-        class="container py-3 d-flex flex-wrap justify-content-between align-items-center bg-white px-5 px-md-0"
-      >
-        <div>
-          <h2>Consulting Agency For Your Business</h2>
-          <p>the quick fox jumps over the lazy dog</p>
+  <!----------------------------------- Navigation Menu with fixed position ----------------------------------->
+  <header>
+    <nav
+      class="flex justify-evenly items-center fixed top-0 w-screen bg-[#252B42] md:bg-transparent md:hover:bg-black/50 text-white z-50">
+      <div class="p-8">
+        <a href="#" class="font-bold text-2xl text-white">BrandName</a>
+      </div>
+      <div class="hidden md:block">
+        <ul class="flex items-center">
+          <li class="pl-5"><a href="#">Home</a></li>
+          <li class="pl-5"><a href="">Product</a></li>
+          <li class="pl-5"><a href="">Pricing</a></li>
+          <li class="pl-5"><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="hidden md:flex items-center">
+        <div class="pr-11">
+          <a href="#">Login</a>
         </div>
         <div>
-          <button class="btn btn-primary py-2 px-4">Contact Us</button>
+          <button class="bg-[#23A6F0] text-white p-3.5 rounded">
+            Become a member →
+          </button>
         </div>
-      </section>
-    </main>
-    <!---------------------------------------------- Start of Footer Section   ----------------------------------------------->
-    <footer>
-      <section class="py-5" style="background-color: #252b42">
-        <div
-          class="container d-flex flex-column flex-md-row align-items-baseline justify-content-md-between px-5 px-md-0"
-        >
-          <div class="text-light">
-            <h5>Company Info</h5>
-            <ul class="list-unstyled">
-              <li>About Us</li>
-              <li>Carrier</li>
-              <li>We are hiring</li>
-              <li>Blog</li>
-            </ul>
-          </div>
-          <div class="text-light">
-            <h5>Legal</h5>
-            <ul class="list-unstyled">
-              <li>About Us</li>
-              <li>Carrier</li>
-              <li>We are hiring</li>
-              <li>Blog</li>
-            </ul>
-          </div>
-          <div class="text-light">
-            <h5>Features</h5>
-            <ul class="list-unstyled">
-              <li>Business Marketing</li>
-              <li>User Analytic</li>
-              <li>Live Chat</li>
-              <li>Unlimited Support</li>
-            </ul>
-          </div>
-          <div class="text-light">
-            <h5>Resources</h5>
-            <ul class="list-unstyled">
-              <li>IOS & Android</li>
-              <li>Watch a Demo</li>
-              <li>Customers</li>
-              <li>API</li>
-            </ul>
-          </div>
-          <div class="text-light">
-            <h5>Get in Touch</h5>
-            <ul class="list-unstyled">
-              <li>
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADFElEQVRoQ+2YjVHbQBCFUQUJFQRXQKggTgWBChAVxFQQpwOoIEoFQAWYCiAVxKkAqMB5b+bkWVb3q5N0eMY3ozGjH/S+27e7d6oOdnxUO67/YA9QOoLJEdhsNqcQ/csIv6iq6rYkRBIAxNdCfKubEE0piGgAh/jiEFEAAfFFIYIAkeKLQXgBPOIvjOI2mWUKTJoTTgCI/wxVj5bk3Ar0AU6V2D4AlsdvCqAzu6UhfADPEP9RADit4YE4G7tP+AA2cvYhpE++vOCxwzF7RDQARBxCzItLjCMK//DMUSmAFV78Rbz8K8TwXGe8VwtpAGsOmLXRja9alYrAEi/+IV7+ExHguTcDADrZeX2yXuDLAa465cw+AGBuAWBefBDnL3Hf1ZizLv+3D4AllLMrRyeREQHdL64BsCgOQAEQ94SfYyEmppGtATB7LwC0wnch5g7iaK3tACQjtVY2Kp8DJgK29ZDNRg3uPxdck0UhZjmtbdSpRojCEcT/VbaZJBdiAGoIk8tmVp2Z7sqA0HYjT9BKuXvsIICxki6VtigwFxitTyoSV4C9tCX1EHvsWIAlBMimRj0nEEbBMqFdewgm+RL3/25vHmqPHQtgm90nCDrRMxsQRhD2Df6Gml3Qfnx3FICx0Ry/90pwA4h2e6kjQaHaTjYn+c4FIaIBDESDX1kuedq6dDD9gdaTfcQltvceOxWAVlrhkN2ZopwzZUosQdgA5Zqphdk+22d7mgRgosBEJYQWs4Cdrl1TbCJCCB60I0eNZ2i17UiFSAYQELYvFtaccEF5YGtcs32y6eyxewEYCNdLWFppizcldiCIzh67N0DATry8xMHlhHMf7YOK3WNnAQiIBn/rxOZlime9TwJJ2WNnAxgIVifOuK9kMll5cEnujMokSexJvjmuMRqhBrbCPTzW5vhDqFTx1DFIBCSQKZcLnKsjQHxp0F7zduPBARQMIQhjy49s8aNEwKbKfOkmDC0WCxNcB00GYLEYQdjRebAAtF8AX01ucOkd1UdGtVCMR3Lv2QPkzmDu8/sI5M5g7vM7H4H/1hF1QCqXnlMAAAAASUVORK5CYII="
-                  style="height: 24px"
-                />
-                (480) 555-0103
-              </li>
-              <li>
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADA0lEQVRoQ+1Yi00bQRDlKkioIKaCQAVxKgipIE4FkAoIFQQqCFQAVBCngpAKclQQqMC8B7OSZfl23uzuGVlipNWdfLcz781vx9ftbLl0W45/55XAS0ewaQQWi8UnEDrEmmC9xdo3gre43mP1WNdd1920Il5NAKAJ9IcB570iJHON9Q1keF8sVQQA/gSWj83bJSAI/gwkTks2c08RAfP6r6UUKbWf9jHFPpZEI0wA4JnXBK+mi0qO9fEZJEhGlhAB8/y/EcAnwCRxEIlElMCfhmkz5OVbEDhQQyATgPe/QymLdhNyChK054pEIJg6d7B6hjVP+Wx1M8Vv7FjvXFTPZ8aekkoqgQso/CIYZl8n+EEBGZLgueHJJXTNvJdUAv+hyOs6LD6pg1hEWE85uYe+3WoCMMbR4MpR5Hp+db8YCbZVntiD4kYAhrz0uYORieepdc+hu8fvuZo4h26mXBWBOXZ/yOgIez/pEqLwGwSmtQS83i/n/po04qmeqwX3TFBSaJH1AFxUkj5LUajS7xpHmKsMeORq9SsEeKi8yQAZM4UeEOBs+1YIbH0Re220h5f2vFQZaKOcbHMtuEkbncHITwdguJUKLZQmv8I5dGDVOUAP0VOeyLUgjhK0t+sNdG4NUAsMcsZ57zHA82MYPM+9B11HeJ4d+Gz/DXRxjMmKSkBJo2SoN4A8RZ+GO/M4T3OOBYyoIu4cRCUSAQNBYMosr4Dz3pHnqwiBSBQ8gN5zyfuhCFgU1FrwAOaeuwPc8mY5AkZgiis/qYwpcjcLR8BIsIOwk4wh8p/5ZDwUASPA2WSOpbTVCMlQ6hQTMBITXFkPuSEvAv4BL0+8Q2udwnAEkhL09lb1QPBT9YPAKoliAhaJGa7enORFwp13cgqqCDQgUQW+qAut8wbSqSQS1eCbESiIRBPwTQkESDQD35yAkWB34te01RZb1W2GCrm6iAdqgt97LrDSYfcX94dolb3XkqLPRyFgkeCJnf648I8Ov240l9EINEc6oPCVwKY8vdEi3iSpRx4HJkDzpbmKAAAAAElFTkSuQmCC"
-                  style="height: 24px"
-                />
-                4517 Washington Ave.
-              </li>
-              <li>
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACaUlEQVRoQ+1Yi1GDQBQMFWgHYgXGDtKBWoGkA63ApALtwFiBpgM7UDsgFagV4K7zyMDxOL4XIHM3w4QJd+92377bOwhmE2/BxPHPPIGhFfQKeAU6ZuA4SyhJkhCJecQ1x8X7IVuMyT9x3QdBwPtcKygg4D/Q63RI1MrcP/jv0iShEXhDx6uRgU/hbEHgOotNI/A9wuynmGMQOK8ikOQ6YMSQaqCkrXg0BXIDAH4DDsshSAD7M+aNbAmtQ4Dj6QI3mgu4ICZG8orYdMG86xgVUZcAg9AFSOLdBeg0JsAvcE/wqgti/hzmJgTSOVaIsXZBAuAfEHdli90HAcan1S4RjKp0bgDObLPecxapBW5DgNlmZswWS0lxfbRuAM86Z8mESpDC3I0JcIDUJbN+YkxCBbjFb9owQNwI43hkMev9l2pwvXW20ZSxOANJXChgG1utZpES90vAU+FZbwRS0AjIbN8qJGpZrc0iEfMFCaMq+9Y7AckKJ3kqKalSq7VYJEvmTitFJwSEBBcfS+pMUaNgtRaL3EnJqGbgjICQ4OJjSWmn13+rFXJlFrnF88hmx04JZNbFCvdlVstuoaLSGsA5ztoOQkDUWEhJmVZrAtxbZBV4idvtNGpuHLZJK6yWQ3MWOToCmZLiujCttmCRoyUg0kf4pdWyqRY5agJ1wNXpc7BFXAdMmz6eQBMXapPhqjFegSkqwJeUqt20SnlXz3dIaJgNfpSfFsmQR9uxqcAz1Nz8NqV+NpQzDXdRnvm1876rEtHi8n2BCeVuHpsdBv3u2UcWPIE+stglhlegS/b6GOsV6COLXWJMXoE/smJXQGkLQHsAAAAASUVORK5CYII="
-                  style="height: 24px"
-                />
-                debra.holt@example.com
-              </li>
-            </ul>
-          </div>
+      </div>
+      <div class="md:hidden flex items-center">
+        <div>
+          <img class="w-[24px] m-2"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADKklEQVRoQ+2YgVEbQQxFfRUkqSBHBYEKMBUEKoipIEkFQAWBCjAVABXEVAAd5KggpALnf0Y7o1l2vdLtGc6Md+bGN749SU/SarXXTDZ8NBtu/2QL8NYRrIrAcrn8CoBDXC2uj7h2BegBv0+4Olw3TdPcrgvUDQCjaegvMZz3lkGYG1w/AcP7wYYLAMafQPMP8XYfI2j8OSDO+rycescEIF7/rVKkVj9T7GCIaBQBYDzzmsan0uVRUmPBfIdBNGwi77S4nUqqfU4Qd/jvKLzT1yMrAcTz9xBOY/Sg4adQPrcohpwZ5+OKQQixVxOJEgCND5Ul2MqKMvMqFWcQmJVLjwfI2rM4IjUnCwCF9BgXrR5XUEZv9h6QS4hvkYAzyKU+90gCiLf+QJrO+1soYc2vHpDPkqojweq0440qDckBxF5izu/2UZCiFQd1ePZBPe8V3RzA38j7x9YFaw2PLOxLNf8JOj5Z3w/zXgBAMNPkWgl6hODWK9gyH7oYBV2ZWFaZXuaRAojT5wJCufsOPgBwDqHflWC3rhTAAgL3lVC3V6ykiWjfwVlT6/uclwKIaz83mucddughOzb1heHeE1IAS20ojC+2GzVggKjS9y4BmC5flFdfM4XcFe9dLuKNL6PxRsY+f6dmoebexfplv9XWlOxcK8HmSvcpr9FK/COMt9+yNnMdhFcdPHQUMt2uexdObmT8M9Mt8vPI0RCpBPnsteLWnO00HeUa3gPNHEqOXRqiyTCeHegs+nvYA00QDmXxnsBH7Ba5JlzfdySqND72vLv2a/jSmZgnMkKkDuM81F9ZogHjeYRk55n7ENa7SBT7HGm46PXcpxE+W+CiJ/VnFc6fisdbA2gviCIAFUv4aaRuMQw2ZafwiJpyiBvCBKDWxCnuebjRe4QX5HnBJo6UQY4LwgWgosF85mK0gnCTmnMd6FI5BIQbQLtbTlQEYY5zgYYUY4p0uLgmmHqLXNWqhagC8OZObn4NxCgAJDVn+NWfWUxrYjQABYjsoWpUABmIlVVpdAARRLGkjhJAIHg2YCVbOUYLUDI8PN8CWD21rnnbCKzLs1a5Gx+B/6QLXkDGiV1yAAAAAElFTkSuQmCC" />
         </div>
-      </section>
-      <section class="bg-white py-3">
-        <div
-          class="container d-flex flex-column flex-md-row align-items-center justify-content-between"
-        >
+        <div>
+          <img class="w-[24px] m-2"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACZUlEQVRoQ+2Y4VHDMAyFmwmgE9BOAB2BCYAJCBNQJoBOAExAmICyQTegTECZgHYCeLpzOOG4iaIoOLmL/6SXq+z3WfKzLsmo5yPpuf7RABA7g0MGOpeBb4yAqA3eZUmSLGIL9tcvlNAegDxuBYjTLkHUBSDtV4DIugKhAVgDYNZZAF8YSmqCdx/e+xkg1l2AENkoIJYQe8YEPwMg7RPAOcS+eILHgNjGhhBlgEQiC2SlR0zwDQAe+gQwh9j7iIJpA8kBV1xDnQwcIvArIgAtvQHAVAXgyijD8zIixA4AtJG/Q5wBB3CC51tEgEcAUCnrABwE+f8xm6MwqQUgTCNUsoX7p1YGHECK5xMTucWujC1E8zkA4JvGO9ahCvgzagM4CPL/AzaTeX8EACpVLjho21oA8v9rBmDaH0F86KwFL04twATiW+uPAOBv0CvKh7qBwlABuDJqrT8CAN033C4vAEDrmQK00h9BvD9vwfs5hToDLgsbPE37o0DnW2rTTQF8qytc9XXsVer9lhkIXTZ767UKRur9ZgCujDI8eX+01zEEACLvtwYIefYUrkHnQzzqeL8pgMuC3x+JhZf8UZTJRoc4Xxy7l+I3748sAERnyQTAZcHvj5pAlHq/eQk5AMoCtQC8ydNA7BA0l348M8uARqlFzADAd9F1kfkHMPHXbG0crW2WgUALTPMvUMt3ZaWijcvntAQIuVBlbwQAVdx/AXwiA5OKDIQAKuPaAKBSufXESkpIFWcO4O4CEkP3AQ06xKX1n4tAGaniTA+xhadr5jA7xJrFLWIGAItdbDLHkIEmu2cR+wP7rQdAY35lzAAAAABJRU5ErkJggg==" />
+        </div>
+        <div>
+          <img class="w-[24px] m-2"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAtklEQVRoQ+2WywrAIAwE9f8/uo9rqVAZk2AZz83i7iSxvW1++ub3bxqoJigBCcAEbCEYIC6XAI4QCkgABojLJYAjhAISgAHicgngCKGABGCAuFwCzwiP6+BYXwT6dd50lxPQwACfBCL6eoXm8hlYcakZDQ3MpBXxbRoBul7TttAoZQ1kvcS/JRAxwLdm2hBrYPSPFJVMlm55C31dr+XvAN1OGojq6e1biAZTPsQaoAlU19tC1QRO0MQwMUmCFfYAAAAASUVORK5CYII=" />
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!----------------------------------- Start of First Section or Hero Banner ----------------------------------->
+  <main>
+    <section class="bg-[url('./assets/hero.jpg')] bg-no-repeat bg-cover h-[670px]">
+      <div
+        class="flex flex-col md:flex-row items-center justify-center md:justify-evenly md:bg-gradient-to-r from-black to-transparent bg-black/75 h-full text-white pt-24">
+        <div class="flex flex-col gap-10 items-center justify-center md:items-start">
+          <div class="w-[55ch] text-center md:text-start">
+            <h1 class="font-extrabold text-6xl">
+              We Ensure A Best Insurance Service
+            </h1>
+          </div>
           <div class="">
-            <p class="mb-0">Made With Love By Figmaland All Right Reserved</p>
+            <p class="text-xl w-[27ch] text-center md:text-start">
+              We know how large objects will act, but things on a small scale
+            </p>
           </div>
-          <div class="d-flex">
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADw0lEQVRoQ+2ZzVUbMRDHZ9a5wHt52BVkMQUEKsCpIHCMfYipIFBBSAWYCnAOdo44FQQqgBSA2VSwJodwYid/mSzP3tWupP0I4QWd/LySRr+Z0cxIYnrijZ/4+ukZ4LEtWJkF/FG46ZG3zSwdEfKZaXMRDv9d4r9AhM8iis6DXuuyCvhSAP6X0PfE+0AkO5jId1mQEAVEPIk4Og7etfC7WCsE4J+GTe+XdwRt94uJXR4Fqwyj1egg2G3NXOdzBtgYhzsQeAJ3aLoKy+sPF5tBIXtX3dbEZV4ngPb45ohJ9l0EuPYV4sG0u3ZgO84KQLlM45ZPMOmO7cQl+03uVmTPxqWsADbGs9O/uPiYfXLVbe6aFGEEaI/DARMj0pRvIvJDhdL7mXjbNKOQHE+7rVyXzQVQGxaClPZLNDnH4EHW5lShuCF8nS1AdvM2dibAfajk61LRRhBVeq2hiR4uirSgbyo6RauynrUfMgGgfQjm9ybhmd8tF6/G5wGo73mupAUwm9WEJecwe8fUK/5uAlD97hhW0GRsLUDpjeugfRsL5FkhA2B27VrbLGo7S1v3i/0Jt4z68O1Nl/2laqdpt7metGoKQFWVDeYLW/Pr+iF+axWzMQr7xPOEWKjdiWwlq9iUILjPPuL+USEJfwZlAozDM5v4nxmRSA6QFwaL31MA0NIEWnr7LwKQyFeE5aVyJm2B0ewieRhxhanNAjgUTXvNrXwL5CQVW5C6AJT85NxpF/q/ANwSls6CrkHDaAFMeIko9NrOXSoAGIWHzPzRRh5Kiu+IQkuXBRoXcgl15QFQczmE1rS8kmG0PEB77JD1rcKoUyIrD2BTyMXuBRcyJzKXSlRdVkXcSJ2Ygu5LdYhJNVWmEL9Yiz80SHzURUMb/1d9dDWWvpgbhQE21ivbiZP96sgD6jg67bUAvNyyAKwjgw6yJoBPADi0ApgfJ28pQDh9MLeLNaoGgO/fRCvk646VmUfKtkN8rtuF4D5a7Su5+Yf6glao0gJ52s8FUB8RkTq48vjm4j6qb5UAiDxvcBZGstO3Wi62qgIofbEVM7tesVQDIJ9xs9E3Wd9ogSIQ5QHsFm/cA0l62+uWMgA2brO4LmsLxIPUxvYiGuZl6iIAKtNGHvXzNqzOnZwB5tFp/l5AA9zV4G0snexcAFSYxCLwHkD7Nu8BVpnYtHEerDG/ACZVzPUXLWIDoDSOcXgbo0GRhcdrKGQBHeD8mZWpw0Kd5NVH3F9ld6TOWSR09k88s9paqs5+lVmgzkXmzf0M8Fiaj+X+Bu6m7kCvnla4AAAAAElFTkSuQmCC"
-              style="height: 24px"
-            />
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEMElEQVRoQ+1ZTVIaQRR+b8hCrUrJnCCIBwieIHiC4FJcSE6gnkA9gXqC4AKylJxAOIF4AJGcYHCjLsJ0vh4Y6BmmZ3oGMEUVs1O7X7/v/b9PphX/eMX1pzWA/+3BtQdWzgOFX04hJ3LfiNwKlM8LogLcWMgCBHf7uNvH3QGR1RrysNM/tOXPxp9xCEnFLdc6ZxY1Y+nZDgKIODMFYgRgt+HUBPEVM+Wz6ZTulhA0YBJnT0d2PelmIgCpPDH/VAUJIf6gALfwu77L1E16JO7vlqASlChB6TIzfwmcFeJHEohYAKOw4Qff8oLECxSuwL3teZTW3fU8zXTNxNvyjPSEa4m9uHCKBbDbdOBCPvaESeU3qdA/sJFwy/sKDadkMbV9EHip/VTN7+te1AIYVRt+9i8isfaXYflxiB4L5nbvcPtSvldsOqcAcKW8vaPzghaAGvuw/mOvapcWbXd4GKWY73y5yK3L3pF9MQaBRB6HEhIa719HvR8HoIXk/T4OnxsIOE0DoHDn5Ont01fvzubfx6jQKzacCyTu+VSu6DxV7bL8GQacvI9k+I1kln1n5tMDaDptWAcNy4NwAMGy6sR+Umnr3TrBg7Vwc5NNCwapuxvujQ8GYVpGmN5PhCpVJwhuCiysgBZAsTl49pUwiX/TXhGu8RKE5coSSl3VSGoeSPC9an4npQcGuDf6kgCo1SrJS/7fkVexYRn2DipRpLFjQsgMQFSjQ8jdDpnqftUal0aEFZ8EAMY0qsUCEGgmR/ZMx/Vi/pWfA40OHTXqrFQ8XOO9RrUldqISfKEAdO5DnMquObHqUANUtboEkWN+mISSUjoD50IJPlcIaQE0nP50fhG3SMKaSQ4EO3x0gi7dAzJ8cm/smCZ6nBeGm8IOh9HyARi6WOeR3WZ8kVgDUC0UlQMrH0IyNNDu509iLEcY4ArhUFtoCOk68cqUUR0Ar5G9SWZB2aAIe0NE05s0MuL7QOPTLEkf4gGpVPTOjKmTrXq/+rkzVdw6mWE0PmyUSNjGsgxzcl6Ka3xze0BN0KRp1PeEupDr6r/crVnQaRLbEBynxQsWqkhKZ/ELzSvJza0Wpkg8Koao7m7RtQkxMPdCo650SbN7lLW9lfKdRnv0BnVNlFblBFZKyrSRTZkBjL3d3lF+z2RQW9SZYmPgKNUq/VL/UbRKFOAZWiVmTE8ittr+Ym/Cki3C+t7So/QKVKsJUxElP55anFk+QLoy+EoDhiILmGLjBcuRANUyJZGTKmA2ctfj9LkFvhHkrjUfuctumVz8f4FFeZaK0RNavoESAei6bRYLp7mDyqdNXFWOEQB/HMiBOZ6SXWnUSXNWdMBoXJjysMYAfBU8yl1QBRcrII5A1vCIPsz4Sd4VsgYoEm2XqKUbBHXiUwPIqOfSrq0BLM20hoLXHjA01NKOrbwH/gFv6udPKfMSRQAAAABJRU5ErkJggg=="
-              style="height: 24px"
-            />
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADWElEQVRoQ+1YXW7aQBCeMX2hDwWfIG5ygNIThJ6g8BjyQHKC5AjpCUJPEHggeQw3KNyAHgDinsBBldo+BE9nlzhBwutZ/yWKZEsIgXdn5/vmdwfhjT/4xvWHCsBrW7CyQGWBnAxULpSGQO82aDp/nD4idYighQhN3j8lQj90wpF/5E7j5Kl9fte9j3tntIB3E3gs0E+jYNLag3FwQoCXj0qblk7XdepGyiodHHD6QGF32XNbqQDwgRMCJ1geN07zgtgfr66Y9RMbOWyZOSBOgajNYLXSa6QvJuvEWkCZrPYXA7WZzTvMA0Ixzwpd2Sgft4aAvjP756b98QBugnaN8Ee0KSuIjc/jneA2RmxK+RDe3ToQdhBCd9Fzd6xoBWBjCZiHQKf+sTu3ZTMv+88E0q/wPbTiAtkawCOIe3BwsDxqfLMBoeKI3eerzVrTGrbCzxChY0ooJgAeu9CdWSj4CM7FovdhlJh5rgNOi3iYFYBWvg5tUwpVco1p9MDicALwmeFhCDqH76RcGxlJ4JKyT7QvCUCH8d3asqfBEKc/4FhBZw70sKohDPJYIBcApTgzOGQF+rYgil6XGQBXQE6jtT3l468JggF8lLoBMQup9BlVxKIZluQtek2x2RQrsXRIWe9VBjL1P9tn5spCZSmva47QQohZaBMHz+1EmcrGy6Yutw4T6dxEH9u/DgYIeCYJKfo9s79i91F3BfERg+R1QNAornGLQyMCUJs27gQXeYqSSOXWgjXRZ9umUQSglOdbke5nkC8Z/KU+JT40Y/atz7ABkNjYFY3EpvpapdHtRS8VB7apMzUAtaHsloLIfGlJsrLoQi9liTSBm8kC0SY96iBQl+w214hPhcQA0eni2B1mkZXKAtsHKCBcqS/5P7435HhyKK8zY9qj9aThn3MGIZ1nnTY8nZlT+VQAvOvfh2q8weOJk7yK64Bly9kWq1RB/FS4CLgZp2icZ11YJIvqWU8dLpIu6pIMMYg3/g0cVNknCrtK0GzNwV8E6yKAnYxD0EHEvTTMqLXKVTjKJjzXGUhXw7Syo/XWQeyNg1YNeNiKuhfytIL8m1NpYyOMZo//qcmdHxJMi2Y7DqQ1gKwMlb2vAlA2w5L8ygISQ2W/ryxQNsOS/Ddvgf8/yn1A8NvgEQAAAABJRU5ErkJggg=="
-              style="height: 24px"
-            />
+
+          <div class="flex flex-col md:flex-row gap-4 items-center">
+            <a class="mr-2" href="#"><button class="bg-[#23A6F0] text-white py-3 px-6 rounded-full">
+                Get Quote Now
+              </button></a>
+            <a class="" href="#"><button
+                class="p-3.5 text-[#23A6F0] md:text-white rounded-full border border-solid border-[#23A6F0] md:border-white py-3 px-6">
+                Learn More
+              </button></a>
+          </div>
+        </div>
+        <div class=""></div>
+        <div class=""></div>
+      </div>
+    </section>
+    <!---------------------------------------------- Start of Second Section   ----------------------------------------------->
+    <section class="py-24 bg-[#252B42]" id="section2">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-14 text-white">
+        <div class="flex flex-col items-center justify-center text-center gap-3">
+          <img src="./assets/wallet.svg" class="w-[72px]" alt="..." />
+
+          <h5 class="">Peace of Mind</h5>
+          <p class="w-[25ch]">
+            So it really behaves like neither. Now we have given up.
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-center text-center gap-4">
+          <img src="./assets/bookmark.svg" class="w-[72px]" alt="..." />
+
+          <h5 class="">Set For Life</h5>
+          <p class="w-[25ch]">
+            They were used to create the machines that launched.
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-center text-center gap-4">
+          <img src="./assets/persons.svg" class="w-[72px]" alt="..." />
+
+          <h5 class="">100% Satisfaction</h5>
+          <p class="w-[25ch]">
+            So it really behaves like neither. Now we have given up.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------------------- Start of Third Section   ----------------------------------------------->
+    <section class="bg-[#8EC2F2] py-28">
+      <div class="text-center text-white pb-20">
+        <h2 class="text-4xl font-bold pb-6">What Clients Say</h2>
+        <p class="w-[25ch] md:w-[45ch] text-sm mx-auto">
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
+        </p>
+      </div>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-28">
+        <div class="bg-white py-8 px-10 relative">
+          <img class="w-[72px] absolute top-4 left-[-3rem] hidden md:block" src="./assets/person1.png" alt="" />
+          <div class="">
+            <h5 class="text-[#252B42] text-2xl">Regina Miles</h5>
+            <p class="text-slate-400">Designer</p>
+            <img src="./assets/4stars.jpg" class="w-[130px]" alt="..." />
+            <p class="text-sm w-[23ch] md:w-[37ch] text-slate-400">
+              This proved to be impossible using the traditional concepts of
+              space and time. Einstein developed a new view of time first and
+              then space. This proved to be impossible using the traditional
+              concepts of space and time. Einstein developed a new view of
+              time first and then space.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white py-8 px-10 relative">
+          <img class="w-[72px] absolute top-4 left-[-3rem] hidden md:block" src="./assets/person2.png" alt="" />
+          <div class="">
+            <h5 class="text-[#252B42] text-2xl">Regina Miles</h5>
+            <p class="text-slate-400">Designer</p>
+            <img src="./assets/4stars.jpg" class="w-[130px]" alt="..." />
+            <p class="text-sm w-[23ch] md:w-[37ch] text-slate-400">
+              This proved to be impossible using the traditional concepts of
+              space and time. Einstein developed a new view of time first and
+              then space. This proved to be impossible using the traditional
+              concepts of space and time. Einstein developed a new view of
+              time first and then space.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------------------- Start of Fourth Section   ----------------------------------------------->
+    <section class="py-24 text-white" style="background-color: #252b42">
+      <!-- title -->
+      <div class="container text-center text-wrap pb-5 text-light">
+        <h2 class="text-4xl font-bold pb-6">Industry</h2>
+        <p style="width: 29rem" class="mx-auto">
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
+        </p>
+      </div>
+      <!-- container -->
+      <div class="flex flex-row d-flex flex-wrap justify-content-center place-content-evenly gap-3">
+        <!-- c1 -->
+        <div class="relative bg-cover bg-center text-bg-dark"
+          style="background-image: url('./assets/img/post.1.jpg'); width: 20rem; height: 27rem;">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end">
+            <div class="p-4">
+              <h5 class="text-sm ">Tax Management</h5>
+              <p class="text-lg">
+                Life Tips From Top Ten Adventure Travelers
+              </p>
+              <button class="bg-blue-500 text-white py-2 px-4 rounded-full">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- c2 -->
+        <div class="relative bg-cover bg-center text-bg-dark"
+          style="background-image: url('./assets/img/post.2.jpg'); width: 20rem; height: 27rem;">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end">
+            <div class="p-4">
+              <h5 class="text-sm ">Tax Management</h5>
+              <p class="text-lg">
+                Life Tips From Top Ten Adventure Travelers
+              </p>
+              <button class="bg-blue-500 text-white py-2 px-4 rounded-full">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- c3 -->
+        <div class="relative bg-cover bg-center text-bg-dark"
+          style="background-image: url('./assets/img/post.3.jpg'); width: 20rem; height: 27rem;">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end">
+            <div class="p-4">
+              <h5 class="text-sm ">Tax Management</h5>
+              <p class="text-lg">
+                Life Tips From Top Ten Adventure Travelers
+              </p>
+              <button class="bg-blue-500 text-white py-2 px-4 rounded-full">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- c4 -->
+        <div class="relative bg-cover bg-center text-bg-dark"
+          style="background-image: url('./assets/img/post.4.jpg'); width: 20rem; height: 27rem;">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end">
+            <div class="p-4">
+              <h5 class="text-sm ">Tax Management</h5>
+              <p class="text-lg">
+                Life Tips From Top Ten Adventure Travelers
+              </p>
+              <button class="bg-blue-500 text-white py-2 px-4 rounded-full">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------------------- Start of Fifth Section   ----------------------------------------------->
+    <section class="py-15" style="background-color: #252b42">
+      <!-- title -->
+      <div class="container text-center text-wrap mb-8 text-white">
+        <h2 class="text-4xl font-bold pb-6">Pricing</h2>
+        <p class="w-[25ch] md:w-[45ch] text-sm mx-auto">
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
+        </p>
+      </div>
+      <!-- container -->
+      <section class="flex flex-row d-flex flex-wrap justify-content-center place-content-evenly gap-3 ">
+        <!-- c1 -->
+        <div class="bg-white rounded-lg text-center px-6 py-9 m-5" style="width: 22rem">
+          <div class="pb-4">
+            <h2 class="card-title fw-bold text-2xl text-bold">Free</h2>
+            <p class="card-text w-50 text-center mx-auto text-secondary">
+              Organize across all apps by hand
+            </p>
+            <div class="card-text py-3">
+              <p class="text-4xl font-bold pb-1 text-sky-400">0$</p>
+              <p class="text-info text-sky-400">Per Month</p>
+            </div>
+            <button class="btn w-72 py-3 text-white rounded" style="background-color: #23a6f0">
+              Try for free
+            </button>
+          </div>
+          <div class="mx-auto">
+            <ul class="list-unstyled d-flex flex-column align-items-start">
+              <!-- linha 1 -->
+              <li class="flex flex-row pb-3">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  Unlimited product updates
+                </p>
+              </li>
+              <!-- linha 2 -->
+              <li class="flex flex-row pb-3 ">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  Unlimited product updates
+                </p>
+              </li>
+              <!-- linha 3 -->
+              <li class="flex flex-row pb-3">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  Unlimited product updates
+                </p>
+              </li>
+              <!-- linha 4 -->
+              <li class="flex flex-row pb-3">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADeElEQVRoQ+1ZW27aQBQdGwk+mx3UrKDJCkpXELqCYhEF+AqsoGQFJV+YCGS6gtAVlKwg6QpCd0A/g4Tdc92xCsaPO2ZMgpT5iVDu3DnnvmdsiCNfxpHjF28EXtqD2jxw696e+p5/LnxxClIWfEt//y9fPOLHwhf+3CyZ95f2Jf3ee+1FYOgOLdMzrwCqbgjDUkGDPQvsmXmmd9OxOwuVvZuyuQi4rnuy8lZfoaib9+DIvkHZLF/btr1U1adMYDQe1REeLg46UT0sQ36J8LNbF62Zil4lAqPJ6JtGqyfhHLSarR6XBItAEDLrlQvL17mK95FDfkwrZqXHCSkWAYTN3aHAh8SJRLvZtrMMkUnAGTsDwzCushQV8X/f92/aF+3UQpFKQCbsXRHg2Dp98TktsRMJyFL5VEC1YWOXgkuU2GpSPiQSeMnQiTJMC6VYArLDkvVfzULHrsZ17FgCB7L+PazzUcFC1+gP/ah8PIGJ86Q62ygAEei435GYjeFk2DCFSV09c9HshLJazSQgp8qHTI15BST4cLsKCcM0zqJT7I4HMC6Qm2hQ078i4MMDELI/0WtqjAN7CKPBptwOASibQdk5Q5maSBL4ieMiXBscZahGP9DYtsaZXQ+MRw87lxGO9jQZDeAD9bgUIXfOUj2AEPIV8GZXEl3gJSiE0JbR43KARcATnt1pdqYYN6bw2JdY0prB0xlaCITgQ9CxJAoAr4UAEmmORPoUtfgWiYLAswg4E+cRVeFDek7Gz+oBCXIzmlR0P/Syq03S2Whmv9DMtl47cpdR7oWDwOgAHxQhVhlVaGQcErrAS69kNzLVUSKNhGbwgjVKEFPE8gKl8T23H8SR0A0eTew3csuKYtI2Tm+S0A7+H2r+OJ33QkMk6CTubMP1MMkpXWhkGCV3WJWTNcgqXynpTPmYRbnwTgOG/Cp88adcKlvKl3rpBXoHPc5nldBkB7ofx3po74etUGvqxJk/ONJ3JsxTrDIaFZL5MEgcm3WTAHjEfVfb4+4hw4kTNpv2ynzcjRo3eC8Vgkqs3uqEagO9jUI/cIRkKKSe1899Xa/WZPVKqdLnhEyuHEgKcerYxtroovNSuWXPToE+zDbYM0WHnR78I18cITnF1mDNGoBZ0UsRXUYAegGvzTFVzl/FZ1bdxSePPuUkznNIkXveCBRpXY7uv4T3t0CuqWv0AAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  1GB Cloud storage
+                </p>
+              </li>
+              <!-- linha 5 -->
+              <li class="flex flex-rowpb-3">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADeElEQVRoQ+1ZW27aQBQdGwk+mx3UrKDJCkpXELqCYhEF+AqsoGQFJV+YCGS6gtAVlKwg6QpCd0A/g4Tdc92xCsaPO2ZMgpT5iVDu3DnnvmdsiCNfxpHjF28EXtqD2jxw696e+p5/LnxxClIWfEt//y9fPOLHwhf+3CyZ95f2Jf3ee+1FYOgOLdMzrwCqbgjDUkGDPQvsmXmmd9OxOwuVvZuyuQi4rnuy8lZfoaib9+DIvkHZLF/btr1U1adMYDQe1REeLg46UT0sQ36J8LNbF62Zil4lAqPJ6JtGqyfhHLSarR6XBItAEDLrlQvL17mK95FDfkwrZqXHCSkWAYTN3aHAh8SJRLvZtrMMkUnAGTsDwzCushQV8X/f92/aF+3UQpFKQCbsXRHg2Dp98TktsRMJyFL5VEC1YWOXgkuU2GpSPiQSeMnQiTJMC6VYArLDkvVfzULHrsZ17FgCB7L+PazzUcFC1+gP/ah8PIGJ86Q62ygAEei435GYjeFk2DCFSV09c9HshLJazSQgp8qHTI15BST4cLsKCcM0zqJT7I4HMC6Qm2hQ078i4MMDELI/0WtqjAN7CKPBptwOASibQdk5Q5maSBL4ieMiXBscZahGP9DYtsaZXQ+MRw87lxGO9jQZDeAD9bgUIXfOUj2AEPIV8GZXEl3gJSiE0JbR43KARcATnt1pdqYYN6bw2JdY0prB0xlaCITgQ9CxJAoAr4UAEmmORPoUtfgWiYLAswg4E+cRVeFDek7Gz+oBCXIzmlR0P/Syq03S2Whmv9DMtl47cpdR7oWDwOgAHxQhVhlVaGQcErrAS69kNzLVUSKNhGbwgjVKEFPE8gKl8T23H8SR0A0eTew3csuKYtI2Tm+S0A7+H2r+OJ33QkMk6CTubMP1MMkpXWhkGCV3WJWTNcgqXynpTPmYRbnwTgOG/Cp88adcKlvKl3rpBXoHPc5nldBkB7ofx3po74etUGvqxJk/ONJ3JsxTrDIaFZL5MEgcm3WTAHjEfVfb4+4hw4kTNpv2ynzcjRo3eC8Vgkqs3uqEagO9jUI/cIRkKKSe1899Xa/WZPVKqdLnhEyuHEgKcerYxtroovNSuWXPToE+zDbYM0WHnR78I18cITnF1mDNGoBZ0UsRXUYAegGvzTFVzl/FZ1bdxSePPuUkznNIkXveCBRpXY7uv4T3t0CuqWv0AAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  Email and community support
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- c2 -->
+        <div class="bg-white rounded-lg text-center px-6 py-9 m-5" style="width: 22rem">
+          <div class="pb-4">
+            <h2 class="card-title fw-bold text-2xl text-bold">Free</h2>
+            <p class="card-text w-50 text-center mx-auto text-secondary">
+              Organize across all apps by hand
+            </p>
+            <div class="card-text py-3">
+              <p class="text-4xl font-bold pb-1 text-sky-400">9.99$</p>
+              <p class="text-info text-sky-400">Per Month</p>
+            </div>
+            <button class="btn w-72 py-3 text-white rounded" style="background-color: #23a6f0">
+              Try for free
+            </button>
+          </div>
+          <div class="mx-auto">
+            <ul class="list-unstyled d-flex flex-column align-items-start">
+              <!-- linha 1 -->
+              <li class="flex flex-row pb-3">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  Unlimited product updates
+                </p>
+              </li>
+              <!-- linha 2 -->
+              <li class="flex flex-row pb-3 ">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  Unlimited product updates
+                </p>
+              </li>
+              <!-- linha 3 -->
+              <li class="flex flex-row pb-3">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  Unlimited product updates
+                </p>
+              </li>
+              <!-- linha 4 -->
+              <li class="flex flex-row pb-3">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADeElEQVRoQ+1ZW27aQBQdGwk+mx3UrKDJCkpXELqCYhEF+AqsoGQFJV+YCGS6gtAVlKwg6QpCd0A/g4Tdc92xCsaPO2ZMgpT5iVDu3DnnvmdsiCNfxpHjF28EXtqD2jxw696e+p5/LnxxClIWfEt//y9fPOLHwhf+3CyZ95f2Jf3ee+1FYOgOLdMzrwCqbgjDUkGDPQvsmXmmd9OxOwuVvZuyuQi4rnuy8lZfoaib9+DIvkHZLF/btr1U1adMYDQe1REeLg46UT0sQ36J8LNbF62Zil4lAqPJ6JtGqyfhHLSarR6XBItAEDLrlQvL17mK95FDfkwrZqXHCSkWAYTN3aHAh8SJRLvZtrMMkUnAGTsDwzCushQV8X/f92/aF+3UQpFKQCbsXRHg2Dp98TktsRMJyFL5VEC1YWOXgkuU2GpSPiQSeMnQiTJMC6VYArLDkvVfzULHrsZ17FgCB7L+PazzUcFC1+gP/ah8PIGJ86Q62ygAEei435GYjeFk2DCFSV09c9HshLJazSQgp8qHTI15BST4cLsKCcM0zqJT7I4HMC6Qm2hQ078i4MMDELI/0WtqjAN7CKPBptwOASibQdk5Q5maSBL4ieMiXBscZahGP9DYtsaZXQ+MRw87lxGO9jQZDeAD9bgUIXfOUj2AEPIV8GZXEl3gJSiE0JbR43KARcATnt1pdqYYN6bw2JdY0prB0xlaCITgQ9CxJAoAr4UAEmmORPoUtfgWiYLAswg4E+cRVeFDek7Gz+oBCXIzmlR0P/Syq03S2Whmv9DMtl47cpdR7oWDwOgAHxQhVhlVaGQcErrAS69kNzLVUSKNhGbwgjVKEFPE8gKl8T23H8SR0A0eTew3csuKYtI2Tm+S0A7+H2r+OJ33QkMk6CTubMP1MMkpXWhkGCV3WJWTNcgqXynpTPmYRbnwTgOG/Cp88adcKlvKl3rpBXoHPc5nldBkB7ofx3po74etUGvqxJk/ONJ3JsxTrDIaFZL5MEgcm3WTAHjEfVfb4+4hw4kTNpv2ynzcjRo3eC8Vgkqs3uqEagO9jUI/cIRkKKSe1899Xa/WZPVKqdLnhEyuHEgKcerYxtroovNSuWXPToE+zDbYM0WHnR78I18cITnF1mDNGoBZ0UsRXUYAegGvzTFVzl/FZ1bdxSePPuUkznNIkXveCBRpXY7uv4T3t0CuqWv0AAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  1GB Cloud storage
+                </p>
+              </li>
+              <!-- linha 5 -->
+              <li class="flex flex-rowpb-3">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADeElEQVRoQ+1ZW27aQBQdGwk+mx3UrKDJCkpXELqCYhEF+AqsoGQFJV+YCGS6gtAVlKwg6QpCd0A/g4Tdc92xCsaPO2ZMgpT5iVDu3DnnvmdsiCNfxpHjF28EXtqD2jxw696e+p5/LnxxClIWfEt//y9fPOLHwhf+3CyZ95f2Jf3ee+1FYOgOLdMzrwCqbgjDUkGDPQvsmXmmd9OxOwuVvZuyuQi4rnuy8lZfoaib9+DIvkHZLF/btr1U1adMYDQe1REeLg46UT0sQ36J8LNbF62Zil4lAqPJ6JtGqyfhHLSarR6XBItAEDLrlQvL17mK95FDfkwrZqXHCSkWAYTN3aHAh8SJRLvZtrMMkUnAGTsDwzCushQV8X/f92/aF+3UQpFKQCbsXRHg2Dp98TktsRMJyFL5VEC1YWOXgkuU2GpSPiQSeMnQiTJMC6VYArLDkvVfzULHrsZ17FgCB7L+PazzUcFC1+gP/ah8PIGJ86Q62ygAEei435GYjeFk2DCFSV09c9HshLJazSQgp8qHTI15BST4cLsKCcM0zqJT7I4HMC6Qm2hQ078i4MMDELI/0WtqjAN7CKPBptwOASibQdk5Q5maSBL4ieMiXBscZahGP9DYtsaZXQ+MRw87lxGO9jQZDeAD9bgUIXfOUj2AEPIV8GZXEl3gJSiE0JbR43KARcATnt1pdqYYN6bw2JdY0prB0xlaCITgQ9CxJAoAr4UAEmmORPoUtfgWiYLAswg4E+cRVeFDek7Gz+oBCXIzmlR0P/Syq03S2Whmv9DMtl47cpdR7oWDwOgAHxQhVhlVaGQcErrAS69kNzLVUSKNhGbwgjVKEFPE8gKl8T23H8SR0A0eTew3csuKYtI2Tm+S0A7+H2r+OJ33QkMk6CTubMP1MMkpXWhkGCV3WJWTNcgqXynpTPmYRbnwTgOG/Cp88adcKlvKl3rpBXoHPc5nldBkB7ofx3po74etUGvqxJk/ONJ3JsxTrDIaFZL5MEgcm3WTAHjEfVfb4+4hw4kTNpv2ynzcjRo3eC8Vgkqs3uqEagO9jUI/cIRkKKSe1899Xa/WZPVKqdLnhEyuHEgKcerYxtroovNSuWXPToE+zDbYM0WHnR78I18cITnF1mDNGoBZ0UsRXUYAegGvzTFVzl/FZ1bdxSePPuUkznNIkXveCBRpXY7uv4T3t0CuqWv0AAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  Email and community support
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- c3 -->
+        <div class="bg-white rounded-lg text-center px-6 py-9 m-5" style="width: 22rem">
+          <div class="pb-4">
+            <h2 class="card-title fw-bold text-2xl text-bold">Free</h2>
+            <p class="card-text w-50 text-center mx-auto text-secondary">
+              Organize across all apps by hand
+            </p>
+            <div class="card-text py-3">
+              <p class="text-4xl font-bold pb-1 text-sky-400">19.99$</p>
+              <p class="text-info text-sky-400">Per Month</p>
+            </div>
+            <button class="btn w-72 py-3 text-white rounded" style="background-color: #23a6f0">
+              Try for free
+            </button>
+          </div>
+          <div class="mx-auto">
+            <ul class="list-unstyled d-flex flex-column align-items-start">
+              <!-- linha 1 -->
+              <li class="flex flex-row pb-3">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  Unlimited product updates
+                </p>
+              </li>
+              <!-- linha 2 -->
+              <li class="flex flex-row pb-3 ">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  Unlimited product updates
+                </p>
+              </li>
+              <!-- linha 3 -->
+              <li class="flex flex-row pb-3">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADJElEQVRoQ+1Z7XHTQBA9If2HDlAqCKkAUUGgApwKklSAqYCkApwKAhWgVEBSAU4H8F/28fYkR5as0+3Kazmeyc54LI9Pd+/t1+3tRebAJTpw/OaFwL4tqGaBzJp3xiSnxlh8RymI4bsh9/hvjk9uzPIujwx+by9bEQBoAE3OAepjBVqAiMhEP4wprkEGz8NkEAEAfwPgX7DkxbBlN966ApGvIPJXOp+YQGZjaNt8h/ZAQlMsgT/LowWswhcRgcwm3xS17kN5lUfFJZcCi0DpMjFpnbQ/gtiZMYtLjksxCcS344Ff6cfO4E5nIW0FCcBtEGAGmWYvggxV9CaKXgJlwEbQ/j7FfuoLbC+Byu//6GcbqTIoOy2OfPHQQ2CvrtNm6XWlTgLVDgvtPycpyArzNiIPgVG0fwcw7wUqwk5dTJkEYvL9VDC5cKi9QWBOkCQmWAf7C0fsHO8cBQlUVeVvzpTDxpTgV+/KSBQn7Sp2w4WQ98lMVKjtQJrgaxLJLzxn4QWX2J2XtC89SQeBGMVUhLpeW3zgXYnyZJH+Ve1PWK9RznRZgNynfRjZko0GeAfhHoF8ErBAYgVoGZlEDbyDBQINpXdZgEnAUu0+QxDO4AKfu0nrglckUIKvg7CLhD54LQI5zPihrfGmJXYDnkuAugXHgWzQWauXJMhP6zy/ZiVBtvGu/gDlNRLMFmmUd+AgKCCmAR4z8dLoFCOZG1mYhB54UgVrI3MNKkEp4SehC54IMEqJyuRzpMa3/P1gk4Q+ePuI2ErbmBTL6ZqEPngHW1JOu5bhgAMNtUNIuLUN38ZwH/6BpnIjgPHtsJKFVcbKjpQlAdfMolh4rQJh8CT2Hw71qfhQX1nhcNsqK4UddGOrJtFXcQ72jcCL3fUUK422B1XxgKPcWEFtb+D3F2rN3ZHdKdgPXVdwsLm7aQ13wUEpVjk7UbYxk51ecNSWcFdMU/zW6lpfY6OaclxmUAz4oq1qQaL97S75BLUTzWgf8Q4sWeBsMfIlXxehsiH2KgMo+qQY0z4UPaxds+JU9wyuWXeVQCXzioNYMvkYY18IjKHlvjX+A0fTYkAjkehFAAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  Unlimited product updates
+                </p>
+              </li>
+              <!-- linha 4 -->
+              <li class="flex flex-row pb-3">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADeElEQVRoQ+1ZW27aQBQdGwk+mx3UrKDJCkpXELqCYhEF+AqsoGQFJV+YCGS6gtAVlKwg6QpCd0A/g4Tdc92xCsaPO2ZMgpT5iVDu3DnnvmdsiCNfxpHjF28EXtqD2jxw696e+p5/LnxxClIWfEt//y9fPOLHwhf+3CyZ95f2Jf3ee+1FYOgOLdMzrwCqbgjDUkGDPQvsmXmmd9OxOwuVvZuyuQi4rnuy8lZfoaib9+DIvkHZLF/btr1U1adMYDQe1REeLg46UT0sQ36J8LNbF62Zil4lAqPJ6JtGqyfhHLSarR6XBItAEDLrlQvL17mK95FDfkwrZqXHCSkWAYTN3aHAh8SJRLvZtrMMkUnAGTsDwzCushQV8X/f92/aF+3UQpFKQCbsXRHg2Dp98TktsRMJyFL5VEC1YWOXgkuU2GpSPiQSeMnQiTJMC6VYArLDkvVfzULHrsZ17FgCB7L+PazzUcFC1+gP/ah8PIGJ86Q62ygAEei435GYjeFk2DCFSV09c9HshLJazSQgp8qHTI15BST4cLsKCcM0zqJT7I4HMC6Qm2hQ078i4MMDELI/0WtqjAN7CKPBptwOASibQdk5Q5maSBL4ieMiXBscZahGP9DYtsaZXQ+MRw87lxGO9jQZDeAD9bgUIXfOUj2AEPIV8GZXEl3gJSiE0JbR43KARcATnt1pdqYYN6bw2JdY0prB0xlaCITgQ9CxJAoAr4UAEmmORPoUtfgWiYLAswg4E+cRVeFDek7Gz+oBCXIzmlR0P/Syq03S2Whmv9DMtl47cpdR7oWDwOgAHxQhVhlVaGQcErrAS69kNzLVUSKNhGbwgjVKEFPE8gKl8T23H8SR0A0eTew3csuKYtI2Tm+S0A7+H2r+OJ33QkMk6CTubMP1MMkpXWhkGCV3WJWTNcgqXynpTPmYRbnwTgOG/Cp88adcKlvKl3rpBXoHPc5nldBkB7ofx3po74etUGvqxJk/ONJ3JsxTrDIaFZL5MEgcm3WTAHjEfVfb4+4hw4kTNpv2ynzcjRo3eC8Vgkqs3uqEagO9jUI/cIRkKKSe1899Xa/WZPVKqdLnhEyuHEgKcerYxtroovNSuWXPToE+zDbYM0WHnR78I18cITnF1mDNGoBZ0UsRXUYAegGvzTFVzl/FZ1bdxSePPuUkznNIkXveCBRpXY7uv4T3t0CuqWv0AAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  1GB Cloud storage
+                </p>
+              </li>
+              <!-- linha 5 -->
+              <li class="flex flex-rowpb-3">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADeElEQVRoQ+1ZW27aQBQdGwk+mx3UrKDJCkpXELqCYhEF+AqsoGQFJV+YCGS6gtAVlKwg6QpCd0A/g4Tdc92xCsaPO2ZMgpT5iVDu3DnnvmdsiCNfxpHjF28EXtqD2jxw696e+p5/LnxxClIWfEt//y9fPOLHwhf+3CyZ95f2Jf3ee+1FYOgOLdMzrwCqbgjDUkGDPQvsmXmmd9OxOwuVvZuyuQi4rnuy8lZfoaib9+DIvkHZLF/btr1U1adMYDQe1REeLg46UT0sQ36J8LNbF62Zil4lAqPJ6JtGqyfhHLSarR6XBItAEDLrlQvL17mK95FDfkwrZqXHCSkWAYTN3aHAh8SJRLvZtrMMkUnAGTsDwzCushQV8X/f92/aF+3UQpFKQCbsXRHg2Dp98TktsRMJyFL5VEC1YWOXgkuU2GpSPiQSeMnQiTJMC6VYArLDkvVfzULHrsZ17FgCB7L+PazzUcFC1+gP/ah8PIGJ86Q62ygAEei435GYjeFk2DCFSV09c9HshLJazSQgp8qHTI15BST4cLsKCcM0zqJT7I4HMC6Qm2hQ078i4MMDELI/0WtqjAN7CKPBptwOASibQdk5Q5maSBL4ieMiXBscZahGP9DYtsaZXQ+MRw87lxGO9jQZDeAD9bgUIXfOUj2AEPIV8GZXEl3gJSiE0JbR43KARcATnt1pdqYYN6bw2JdY0prB0xlaCITgQ9CxJAoAr4UAEmmORPoUtfgWiYLAswg4E+cRVeFDek7Gz+oBCXIzmlR0P/Syq03S2Whmv9DMtl47cpdR7oWDwOgAHxQhVhlVaGQcErrAS69kNzLVUSKNhGbwgjVKEFPE8gKl8T23H8SR0A0eTew3csuKYtI2Tm+S0A7+H2r+OJ33QkMk6CTubMP1MMkpXWhkGCV3WJWTNcgqXynpTPmYRbnwTgOG/Cp88adcKlvKl3rpBXoHPc5nldBkB7ofx3po74etUGvqxJk/ONJ3JsxTrDIaFZL5MEgcm3WTAHjEfVfb4+4hw4kTNpv2ynzcjRo3eC8Vgkqs3uqEagO9jUI/cIRkKKSe1899Xa/WZPVKqdLnhEyuHEgKcerYxtroovNSuWXPToE+zDbYM0WHnR78I18cITnF1mDNGoBZ0UsRXUYAegGvzTFVzl/FZ1bdxSePPuUkznNIkXveCBRpXY7uv4T3t0CuqWv0AAAAAElFTkSuQmCC" />
+                <p class="self-center">
+                  Email and community support
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-    </footer>
-  </body>
+    </section>
+    <!---------------------------------------------- Start of Sixth Section   ----------------------------------------------->
+
+    <!-- container A -->
+    <section class="p-10 flex flex-wrap justify-evenly" style="
+          background: url(./assets/img/contact-cover.1.jpg) no-repeat;
+          background-size: cover;">
+      <div class="container w-4/5 flex flex-col flex-wrap">
+        <!-- title -->
+        <h6 class="" style="width: 29rem">Contact Us</h6>
+        <h2 class="text-4xl font-bold pb-6">Make an Appointment</h2>
+        <!-- form -->
+        <form class=" flex flex-col justify-items-center">
+          <!-- nome e email -->
+          <div class="flex  sm:flex-col sm: md:flex-row space-x-3 md:justify-items-start">
+            <input class="w-1/3 mb-2 p-2 mx-0 border-0 rounded" type="text" placeholder="Full Name*" required />
+            <input class="w-1/3 mb-2 p-2 mx-0 border-0 rounded" type="email" name="" id="" placeholder="Email*"
+              required />
+          </div>
+
+          <!-- select e available -->
+          <div class="flex sm:flex-col md:flex-row space-x-3 justify-items-start">
+            <select name="" id="" class="w-1/3 mb-2 p-2 mx-0 border-0 rounded">
+              <option value="" disabled selected>Please select</option>
+            </select>
+            <select class="w-1/3 mb-2 p-2 mx-0 border-0 rounded" name="" id="">
+              <option value="" selected disabled>4:00 Available</option>
+            </select>
+          </div>
+          <div>
+            <textarea name="" id="" style="height: 140px; resize: none" class="rounded border-0 w-4/6"
+              placeholder="Message"></textarea>
+          </div>
+          <div class="row mt-3">
+            <button class="btn w-72 py-3 text-white rounded" style="background-color: #23a6f0">
+              Book Appointment
+            </button>
+          </div>
+      </div>
+      </form>
+      </div>
+    </section>
+    <!-- container B -->
+    <section class="container p-5 my-5 mx-16 flex flex-wrap sm:flex-col sm:justify-center md:flex-row  md:justify-between">
+      <div>
+        <h2 class="text-xl my-1 font-bold">Consulting Agency For Your Business</h2>
+        <p class="text-neutral-600 my-1">the quick fox jumps over the lazy dog</p>
+      </div>
+      <div class="my-2">
+        <button class="btn w-72 py-3 text-white rounded" style="background-color: #23a6f0">Contact Us</button>
+      </div>
+    </section>
+  </main>
+  <!---------------------------------------------- Start of Footer Section   ----------------------------------------------->
+  <footer>
+    <!-- container A -->
+    <section class="py-5 text-white" style="background-color: #252b42">
+      <div class="container p-3 flex md:flex-row sm:flex-col justify-around">
+        <!-- col 1 -->
+        <div>
+          <h5 class="font-bold mb-2">Company Info</h5>
+          <ul class="list-unstyled">
+            <li>About Us</li>
+            <li>Carrier</li>
+            <li>We are hiring</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <!-- col 2 -->
+        <div>
+          <h5 class="font-bold mb-2">Legal</h5>
+          <ul class="list-unstyled">
+            <li>About Us</li>
+            <li>Carrier</li>
+            <li>We are hiring</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <!-- col 3 -->
+        <div>
+          <h5 class="font-bold mb-2">Features</h5>
+          <ul class="list-unstyled">
+            <li>Business Marketing</li>
+            <li>User Analytic</li>
+            <li>Live Chat</li>
+            <li>Unlimited Support</li>
+          </ul>
+        </div>
+        <!-- col 4 -->
+        <div>
+          <h5 class="font-bold mb-2">Resources</h5>
+          <ul class="list-unstyled">
+            <li>IOS & Android</li>
+            <li>Watch a Demo</li>
+            <li>Customers</li>
+            <li>API</li>
+          </ul>
+        </div>
+        <!-- col 5 -->
+        <div class="text-light">
+          <h5 class="font-bold mb-2">Get in Touch</h5>
+          <ul class="list-unstyled">
+            <li>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADFElEQVRoQ+2YjVHbQBCFUQUJFQRXQKggTgWBChAVxFQQpwOoIEoFQAWYCiAVxKkAqMB5b+bkWVb3q5N0eMY3ozGjH/S+27e7d6oOdnxUO67/YA9QOoLJEdhsNqcQ/csIv6iq6rYkRBIAxNdCfKubEE0piGgAh/jiEFEAAfFFIYIAkeKLQXgBPOIvjOI2mWUKTJoTTgCI/wxVj5bk3Ar0AU6V2D4AlsdvCqAzu6UhfADPEP9RADit4YE4G7tP+AA2cvYhpE++vOCxwzF7RDQARBxCzItLjCMK//DMUSmAFV78Rbz8K8TwXGe8VwtpAGsOmLXRja9alYrAEi/+IV7+ExHguTcDADrZeX2yXuDLAa465cw+AGBuAWBefBDnL3Hf1ZizLv+3D4AllLMrRyeREQHdL64BsCgOQAEQ94SfYyEmppGtATB7LwC0wnch5g7iaK3tACQjtVY2Kp8DJgK29ZDNRg3uPxdck0UhZjmtbdSpRojCEcT/VbaZJBdiAGoIk8tmVp2Z7sqA0HYjT9BKuXvsIICxki6VtigwFxitTyoSV4C9tCX1EHvsWIAlBMimRj0nEEbBMqFdewgm+RL3/25vHmqPHQtgm90nCDrRMxsQRhD2Df6Gml3Qfnx3FICx0Ry/90pwA4h2e6kjQaHaTjYn+c4FIaIBDESDX1kuedq6dDD9gdaTfcQltvceOxWAVlrhkN2ZopwzZUosQdgA5Zqphdk+22d7mgRgosBEJYQWs4Cdrl1TbCJCCB60I0eNZ2i17UiFSAYQELYvFtaccEF5YGtcs32y6eyxewEYCNdLWFppizcldiCIzh67N0DATry8xMHlhHMf7YOK3WNnAQiIBn/rxOZlime9TwJJ2WNnAxgIVifOuK9kMll5cEnujMokSexJvjmuMRqhBrbCPTzW5vhDqFTx1DFIBCSQKZcLnKsjQHxp0F7zduPBARQMIQhjy49s8aNEwKbKfOkmDC0WCxNcB00GYLEYQdjRebAAtF8AX01ucOkd1UdGtVCMR3Lv2QPkzmDu8/sI5M5g7vM7H4H/1hF1QCqXnlMAAAAASUVORK5CYII="
+                style="height: 24px" />
+              (480) 555-0103
+            </li>
+            <li>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADA0lEQVRoQ+1Yi00bQRDlKkioIKaCQAVxKgipIE4FkAoIFQQqCFQAVBCngpAKclQQqMC8B7OSZfl23uzuGVlipNWdfLcz781vx9ftbLl0W45/55XAS0ewaQQWi8UnEDrEmmC9xdo3gre43mP1WNdd1920Il5NAKAJ9IcB570iJHON9Q1keF8sVQQA/gSWj83bJSAI/gwkTks2c08RAfP6r6UUKbWf9jHFPpZEI0wA4JnXBK+mi0qO9fEZJEhGlhAB8/y/EcAnwCRxEIlElMCfhmkz5OVbEDhQQyATgPe/QymLdhNyChK054pEIJg6d7B6hjVP+Wx1M8Vv7FjvXFTPZ8aekkoqgQso/CIYZl8n+EEBGZLgueHJJXTNvJdUAv+hyOs6LD6pg1hEWE85uYe+3WoCMMbR4MpR5Hp+db8YCbZVntiD4kYAhrz0uYORieepdc+hu8fvuZo4h26mXBWBOXZ/yOgIez/pEqLwGwSmtQS83i/n/po04qmeqwX3TFBSaJH1AFxUkj5LUajS7xpHmKsMeORq9SsEeKi8yQAZM4UeEOBs+1YIbH0Re220h5f2vFQZaKOcbHMtuEkbncHITwdguJUKLZQmv8I5dGDVOUAP0VOeyLUgjhK0t+sNdG4NUAsMcsZ57zHA82MYPM+9B11HeJ4d+Gz/DXRxjMmKSkBJo2SoN4A8RZ+GO/M4T3OOBYyoIu4cRCUSAQNBYMosr4Dz3pHnqwiBSBQ8gN5zyfuhCFgU1FrwAOaeuwPc8mY5AkZgiis/qYwpcjcLR8BIsIOwk4wh8p/5ZDwUASPA2WSOpbTVCMlQ6hQTMBITXFkPuSEvAv4BL0+8Q2udwnAEkhL09lb1QPBT9YPAKoliAhaJGa7enORFwp13cgqqCDQgUQW+qAut8wbSqSQS1eCbESiIRBPwTQkESDQD35yAkWB34te01RZb1W2GCrm6iAdqgt97LrDSYfcX94dolb3XkqLPRyFgkeCJnf648I8Ov240l9EINEc6oPCVwKY8vdEi3iSpRx4HJkDzpbmKAAAAAElFTkSuQmCC"
+                style="height: 24px" />
+              4517 Washington Ave.
+            </li>
+            <li>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACaUlEQVRoQ+1Yi1GDQBQMFWgHYgXGDtKBWoGkA63ApALtwFiBpgM7UDsgFagV4K7zyMDxOL4XIHM3w4QJd+92377bOwhmE2/BxPHPPIGhFfQKeAU6ZuA4SyhJkhCJecQ1x8X7IVuMyT9x3QdBwPtcKygg4D/Q63RI1MrcP/jv0iShEXhDx6uRgU/hbEHgOotNI/A9wuynmGMQOK8ikOQ6YMSQaqCkrXg0BXIDAH4DDsshSAD7M+aNbAmtQ4Dj6QI3mgu4ICZG8orYdMG86xgVUZcAg9AFSOLdBeg0JsAvcE/wqgti/hzmJgTSOVaIsXZBAuAfEHdli90HAcan1S4RjKp0bgDObLPecxapBW5DgNlmZswWS0lxfbRuAM86Z8mESpDC3I0JcIDUJbN+YkxCBbjFb9owQNwI43hkMev9l2pwvXW20ZSxOANJXChgG1utZpES90vAU+FZbwRS0AjIbN8qJGpZrc0iEfMFCaMq+9Y7AckKJ3kqKalSq7VYJEvmTitFJwSEBBcfS+pMUaNgtRaL3EnJqGbgjICQ4OJjSWmn13+rFXJlFrnF88hmx04JZNbFCvdlVstuoaLSGsA5ztoOQkDUWEhJmVZrAtxbZBV4idvtNGpuHLZJK6yWQ3MWOToCmZLiujCttmCRoyUg0kf4pdWyqRY5agJ1wNXpc7BFXAdMmz6eQBMXapPhqjFegSkqwJeUqt20SnlXz3dIaJgNfpSfFsmQR9uxqcAz1Nz8NqV+NpQzDXdRnvm1876rEtHi8n2BCeVuHpsdBv3u2UcWPIE+stglhlegS/b6GOsV6COLXWJMXoE/smJXQGkLQHsAAAAASUVORK5CYII="
+                style="height: 24px" />
+              debra.holt@example.com
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- container B -->
+    </section>
+    <!-- container B -->
+    <section class="bg-white p-8">
+      <div class="flex flex-row justify-around">
+        <div class="">
+          <p class="mb-0">Made With Love By Figmaland All Right Reserved</p>
+        </div>
+        <div class="flex flex-row">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADw0lEQVRoQ+2ZzVUbMRDHZ9a5wHt52BVkMQUEKsCpIHCMfYipIFBBSAWYCnAOdo44FQQqgBSA2VSwJodwYid/mSzP3tWupP0I4QWd/LySRr+Z0cxIYnrijZ/4+ukZ4LEtWJkF/FG46ZG3zSwdEfKZaXMRDv9d4r9AhM8iis6DXuuyCvhSAP6X0PfE+0AkO5jId1mQEAVEPIk4Og7etfC7WCsE4J+GTe+XdwRt94uJXR4Fqwyj1egg2G3NXOdzBtgYhzsQeAJ3aLoKy+sPF5tBIXtX3dbEZV4ngPb45ohJ9l0EuPYV4sG0u3ZgO84KQLlM45ZPMOmO7cQl+03uVmTPxqWsADbGs9O/uPiYfXLVbe6aFGEEaI/DARMj0pRvIvJDhdL7mXjbNKOQHE+7rVyXzQVQGxaClPZLNDnH4EHW5lShuCF8nS1AdvM2dibAfajk61LRRhBVeq2hiR4uirSgbyo6RauynrUfMgGgfQjm9ybhmd8tF6/G5wGo73mupAUwm9WEJecwe8fUK/5uAlD97hhW0GRsLUDpjeugfRsL5FkhA2B27VrbLGo7S1v3i/0Jt4z68O1Nl/2laqdpt7metGoKQFWVDeYLW/Pr+iF+axWzMQr7xPOEWKjdiWwlq9iUILjPPuL+USEJfwZlAozDM5v4nxmRSA6QFwaL31MA0NIEWnr7LwKQyFeE5aVyJm2B0ewieRhxhanNAjgUTXvNrXwL5CQVW5C6AJT85NxpF/q/ANwSls6CrkHDaAFMeIko9NrOXSoAGIWHzPzRRh5Kiu+IQkuXBRoXcgl15QFQczmE1rS8kmG0PEB77JD1rcKoUyIrD2BTyMXuBRcyJzKXSlRdVkXcSJ2Ygu5LdYhJNVWmEL9Yiz80SHzURUMb/1d9dDWWvpgbhQE21ivbiZP96sgD6jg67bUAvNyyAKwjgw6yJoBPADi0ApgfJ28pQDh9MLeLNaoGgO/fRCvk646VmUfKtkN8rtuF4D5a7Su5+Yf6glao0gJ52s8FUB8RkTq48vjm4j6qb5UAiDxvcBZGstO3Wi62qgIofbEVM7tesVQDIJ9xs9E3Wd9ogSIQ5QHsFm/cA0l62+uWMgA2brO4LmsLxIPUxvYiGuZl6iIAKtNGHvXzNqzOnZwB5tFp/l5AA9zV4G0snexcAFSYxCLwHkD7Nu8BVpnYtHEerDG/ACZVzPUXLWIDoDSOcXgbo0GRhcdrKGQBHeD8mZWpw0Kd5NVH3F9ld6TOWSR09k88s9paqs5+lVmgzkXmzf0M8Fiaj+X+Bu6m7kCvnla4AAAAAElFTkSuQmCC"
+            style="height: 24px" />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEMElEQVRoQ+1ZTVIaQRR+b8hCrUrJnCCIBwieIHiC4FJcSE6gnkA9gXqC4AKylJxAOIF4AJGcYHCjLsJ0vh4Y6BmmZ3oGMEUVs1O7X7/v/b9PphX/eMX1pzWA/+3BtQdWzgOFX04hJ3LfiNwKlM8LogLcWMgCBHf7uNvH3QGR1RrysNM/tOXPxp9xCEnFLdc6ZxY1Y+nZDgKIODMFYgRgt+HUBPEVM+Wz6ZTulhA0YBJnT0d2PelmIgCpPDH/VAUJIf6gALfwu77L1E16JO7vlqASlChB6TIzfwmcFeJHEohYAKOw4Qff8oLECxSuwL3teZTW3fU8zXTNxNvyjPSEa4m9uHCKBbDbdOBCPvaESeU3qdA/sJFwy/sKDadkMbV9EHip/VTN7+te1AIYVRt+9i8isfaXYflxiB4L5nbvcPtSvldsOqcAcKW8vaPzghaAGvuw/mOvapcWbXd4GKWY73y5yK3L3pF9MQaBRB6HEhIa719HvR8HoIXk/T4OnxsIOE0DoHDn5Ont01fvzubfx6jQKzacCyTu+VSu6DxV7bL8GQacvI9k+I1kln1n5tMDaDptWAcNy4NwAMGy6sR+Umnr3TrBg7Vwc5NNCwapuxvujQ8GYVpGmN5PhCpVJwhuCiysgBZAsTl49pUwiX/TXhGu8RKE5coSSl3VSGoeSPC9an4npQcGuDf6kgCo1SrJS/7fkVexYRn2DipRpLFjQsgMQFSjQ8jdDpnqftUal0aEFZ8EAMY0qsUCEGgmR/ZMx/Vi/pWfA40OHTXqrFQ8XOO9RrUldqISfKEAdO5DnMquObHqUANUtboEkWN+mISSUjoD50IJPlcIaQE0nP50fhG3SMKaSQ4EO3x0gi7dAzJ8cm/smCZ6nBeGm8IOh9HyARi6WOeR3WZ8kVgDUC0UlQMrH0IyNNDu509iLEcY4ArhUFtoCOk68cqUUR0Ar5G9SWZB2aAIe0NE05s0MuL7QOPTLEkf4gGpVPTOjKmTrXq/+rkzVdw6mWE0PmyUSNjGsgxzcl6Ka3xze0BN0KRp1PeEupDr6r/crVnQaRLbEBynxQsWqkhKZ/ELzSvJza0Wpkg8Koao7m7RtQkxMPdCo650SbN7lLW9lfKdRnv0BnVNlFblBFZKyrSRTZkBjL3d3lF+z2RQW9SZYmPgKNUq/VL/UbRKFOAZWiVmTE8ittr+Ym/Cki3C+t7So/QKVKsJUxElP55anFk+QLoy+EoDhiILmGLjBcuRANUyJZGTKmA2ctfj9LkFvhHkrjUfuctumVz8f4FFeZaK0RNavoESAei6bRYLp7mDyqdNXFWOEQB/HMiBOZ6SXWnUSXNWdMBoXJjysMYAfBU8yl1QBRcrII5A1vCIPsz4Sd4VsgYoEm2XqKUbBHXiUwPIqOfSrq0BLM20hoLXHjA01NKOrbwH/gFv6udPKfMSRQAAAABJRU5ErkJggg=="
+            style="height: 24px" />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADWElEQVRoQ+1YXW7aQBCeMX2hDwWfIG5ygNIThJ6g8BjyQHKC5AjpCUJPEHggeQw3KNyAHgDinsBBldo+BE9nlzhBwutZ/yWKZEsIgXdn5/vmdwfhjT/4xvWHCsBrW7CyQGWBnAxULpSGQO82aDp/nD4idYighQhN3j8lQj90wpF/5E7j5Kl9fte9j3tntIB3E3gs0E+jYNLag3FwQoCXj0qblk7XdepGyiodHHD6QGF32XNbqQDwgRMCJ1geN07zgtgfr66Y9RMbOWyZOSBOgajNYLXSa6QvJuvEWkCZrPYXA7WZzTvMA0Ixzwpd2Sgft4aAvjP756b98QBugnaN8Ee0KSuIjc/jneA2RmxK+RDe3ToQdhBCd9Fzd6xoBWBjCZiHQKf+sTu3ZTMv+88E0q/wPbTiAtkawCOIe3BwsDxqfLMBoeKI3eerzVrTGrbCzxChY0ooJgAeu9CdWSj4CM7FovdhlJh5rgNOi3iYFYBWvg5tUwpVco1p9MDicALwmeFhCDqH76RcGxlJ4JKyT7QvCUCH8d3asqfBEKc/4FhBZw70sKohDPJYIBcApTgzOGQF+rYgil6XGQBXQE6jtT3l468JggF8lLoBMQup9BlVxKIZluQtek2x2RQrsXRIWe9VBjL1P9tn5spCZSmva47QQohZaBMHz+1EmcrGy6Yutw4T6dxEH9u/DgYIeCYJKfo9s79i91F3BfERg+R1QNAornGLQyMCUJs27gQXeYqSSOXWgjXRZ9umUQSglOdbke5nkC8Z/KU+JT40Y/atz7ABkNjYFY3EpvpapdHtRS8VB7apMzUAtaHsloLIfGlJsrLoQi9liTSBm8kC0SY96iBQl+w214hPhcQA0eni2B1mkZXKAtsHKCBcqS/5P7435HhyKK8zY9qj9aThn3MGIZ1nnTY8nZlT+VQAvOvfh2q8weOJk7yK64Bly9kWq1RB/FS4CLgZp2icZ11YJIvqWU8dLpIu6pIMMYg3/g0cVNknCrtK0GzNwV8E6yKAnYxD0EHEvTTMqLXKVTjKJjzXGUhXw7Syo/XWQeyNg1YNeNiKuhfytIL8m1NpYyOMZo//qcmdHxJMi2Y7DqQ1gKwMlb2vAlA2w5L8ygISQ2W/ryxQNsOS/Ddvgf8/yn1A8NvgEQAAAABJRU5ErkJggg=="
+            style="height: 24px" />
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+
 </html>
