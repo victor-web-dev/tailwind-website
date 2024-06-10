@@ -1,151 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com" defer></script>
-    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries" defer></script> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
-    
+
     <title>Tailwind Website</title>
   </head>
 
-<body>
-
+  <body>
     <!----------------------------------- Navigation Menu with fixed position ----------------------------------->
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top d-md-flex flex-lg-row justify-content-evenly align-items-center ">
-            <div class="container-fluid align-items-center">
-                <a class="navbar-brand" href="#">BrandName</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse text-center ms-auto" id="navbarText">
-                    <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                    </ul> -->
-                    <ul class="navbar-nav text-light d-block d-md-flex w-100">
-                        <li class="p-2 nav-item me-auto">Home</li>
-                        <li class="p-2 nav-item me-auto">Product</li>
-                        <li class="p-2 nav-item me-auto">Pricing</li>
-                        <li class="p-2 nav-item me-auto">Contact</li>
-                        <li class="p-2 nav-item me-auto">Login</li>
-                        <li class="p-2"><a class="p-2 btn btn-primary" href="#">Become a member &#10142</a></li>
-                    </ul>
-                    <!-- <div class="d-flex flex-lg-row ms-auto">
-                        <p class="p-2  nav-item">Login</p>
-                        <a class="p-2 btn btn-primary  nav-item" href="#">Become a member &#10142</a>
-                    </div> -->
-                </div>
-            </div>
-        </nav>
+      <nav
+        class="flex justify-evenly items-center fixed top-0 w-screen bg-[#252B42] md:bg-transparent md:hover:bg-black/50 text-white z-50"
+      >
+        <div class="p-8">
+          <a href="#" class="font-bold text-2xl text-white">BrandName</a>
+        </div>
+        <div class="hidden md:block">
+          <ul class="flex items-center">
+            <li class="pl-5"><a href="#">Home</a></li>
+            <li class="pl-5"><a href="">Product</a></li>
+            <li class="pl-5"><a href="">Pricing</a></li>
+            <li class="pl-5"><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="hidden md:flex items-center">
+          <div class="pr-11">
+            <a href="#">Login</a>
+          </div>
+          <div>
+            <button class="bg-[#23A6F0] text-white p-3.5 rounded">
+              Become a member →
+            </button>
+          </div>
+        </div>
+        <div class="md:hidden flex items-center">
+          <div>
+            <img
+              class="w-[24px] m-2"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADKklEQVRoQ+2YgVEbQQxFfRUkqSBHBYEKMBUEKoipIEkFQAWBCjAVABXEVAAd5KggpALnf0Y7o1l2vdLtGc6Md+bGN749SU/SarXXTDZ8NBtu/2QL8NYRrIrAcrn8CoBDXC2uj7h2BegBv0+4Olw3TdPcrgvUDQCjaegvMZz3lkGYG1w/AcP7wYYLAMafQPMP8XYfI2j8OSDO+rycescEIF7/rVKkVj9T7GCIaBQBYDzzmsan0uVRUmPBfIdBNGwi77S4nUqqfU4Qd/jvKLzT1yMrAcTz9xBOY/Sg4adQPrcohpwZ5+OKQQixVxOJEgCND5Ul2MqKMvMqFWcQmJVLjwfI2rM4IjUnCwCF9BgXrR5XUEZv9h6QS4hvkYAzyKU+90gCiLf+QJrO+1soYc2vHpDPkqojweq0440qDckBxF5izu/2UZCiFQd1ePZBPe8V3RzA38j7x9YFaw2PLOxLNf8JOj5Z3w/zXgBAMNPkWgl6hODWK9gyH7oYBV2ZWFaZXuaRAojT5wJCufsOPgBwDqHflWC3rhTAAgL3lVC3V6ykiWjfwVlT6/uclwKIaz83mucddughOzb1heHeE1IAS20ojC+2GzVggKjS9y4BmC5flFdfM4XcFe9dLuKNL6PxRsY+f6dmoebexfplv9XWlOxcK8HmSvcpr9FK/COMt9+yNnMdhFcdPHQUMt2uexdObmT8M9Mt8vPI0RCpBPnsteLWnO00HeUa3gPNHEqOXRqiyTCeHegs+nvYA00QDmXxnsBH7Ba5JlzfdySqND72vLv2a/jSmZgnMkKkDuM81F9ZogHjeYRk55n7ENa7SBT7HGm46PXcpxE+W+CiJ/VnFc6fisdbA2gviCIAFUv4aaRuMQw2ZafwiJpyiBvCBKDWxCnuebjRe4QX5HnBJo6UQY4LwgWgosF85mK0gnCTmnMd6FI5BIQbQLtbTlQEYY5zgYYUY4p0uLgmmHqLXNWqhagC8OZObn4NxCgAJDVn+NWfWUxrYjQABYjsoWpUABmIlVVpdAARRLGkjhJAIHg2YCVbOUYLUDI8PN8CWD21rnnbCKzLs1a5Gx+B/6QLXkDGiV1yAAAAAElFTkSuQmCC"
+            />
+          </div>
+          <div>
+            <img
+              class="w-[24px] m-2"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACZUlEQVRoQ+2Y4VHDMAyFmwmgE9BOAB2BCYAJCBNQJoBOAExAmICyQTegTECZgHYCeLpzOOG4iaIoOLmL/6SXq+z3WfKzLsmo5yPpuf7RABA7g0MGOpeBb4yAqA3eZUmSLGIL9tcvlNAegDxuBYjTLkHUBSDtV4DIugKhAVgDYNZZAF8YSmqCdx/e+xkg1l2AENkoIJYQe8YEPwMg7RPAOcS+eILHgNjGhhBlgEQiC2SlR0zwDQAe+gQwh9j7iIJpA8kBV1xDnQwcIvArIgAtvQHAVAXgyijD8zIixA4AtJG/Q5wBB3CC51tEgEcAUCnrABwE+f8xm6MwqQUgTCNUsoX7p1YGHECK5xMTucWujC1E8zkA4JvGO9ahCvgzagM4CPL/AzaTeX8EACpVLjho21oA8v9rBmDaH0F86KwFL04twATiW+uPAOBv0CvKh7qBwlABuDJqrT8CAN033C4vAEDrmQK00h9BvD9vwfs5hToDLgsbPE37o0DnW2rTTQF8qytc9XXsVer9lhkIXTZ767UKRur9ZgCujDI8eX+01zEEACLvtwYIefYUrkHnQzzqeL8pgMuC3x+JhZf8UZTJRoc4Xxy7l+I3748sAERnyQTAZcHvj5pAlHq/eQk5AMoCtQC8ydNA7BA0l348M8uARqlFzADAd9F1kfkHMPHXbG0crW2WgUALTPMvUMt3ZaWijcvntAQIuVBlbwQAVdx/AXwiA5OKDIQAKuPaAKBSufXESkpIFWcO4O4CEkP3AQ06xKX1n4tAGaniTA+xhadr5jA7xJrFLWIGAItdbDLHkIEmu2cR+wP7rQdAY35lzAAAAABJRU5ErkJggg=="
+            />
+          </div>
+          <div>
+            <img
+              class="w-[24px] m-2"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAtklEQVRoQ+2WywrAIAwE9f8/uo9rqVAZk2AZz83i7iSxvW1++ub3bxqoJigBCcAEbCEYIC6XAI4QCkgABojLJYAjhAISgAHicgngCKGABGCAuFwCzwiP6+BYXwT6dd50lxPQwACfBCL6eoXm8hlYcakZDQ3MpBXxbRoBul7TttAoZQ1kvcS/JRAxwLdm2hBrYPSPFJVMlm55C31dr+XvAN1OGojq6e1biAZTPsQaoAlU19tC1QRO0MQwMUmCFfYAAAAASUVORK5CYII="
+            />
+          </div>
+        </div>
+      </nav>
     </header>
     <!----------------------------------- Start of First Section or Hero Banner ----------------------------------->
     <main>
-        <section id="section1">
-            <div class="d-grid container text-left">
-                <div class="row">
-                    <h1 class="col display-1">We Ensure A Best Insurance Service</h1>
-                    <div class="col"><span> </span></div>
-                </div>
-                <div class="row">
-                    <p class="col fs-5">We know how large objects will act, but things on a small scale</p>
-                    <div class="col"><span> </span></div>
-                </div>
+      <section
+        class="bg-[url('./assets/hero.jpg')] bg-no-repeat bg-cover h-[670px]"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center justify-center md:justify-evenly md:bg-gradient-to-r from-black to-transparent bg-black/75 h-full text-white pt-24"
+        >
+          <div
+            class="flex flex-col gap-10 items-center justify-center md:items-start"
+          >
+            <div class="w-[55ch] text-center md:text-start">
+              <h1 class="font-extrabold text-6xl">
+                We Ensure A Best Insurance Service
+              </h1>
+            </div>
+            <div class="">
+              <p class="text-xl w-[27ch] text-center md:text-start">
+                We know how large objects will act, but things on a small scale
+              </p>
+            </div>
 
-                <div class="row fs-5 row-cols-1 row-cols-md-2">
-                    <div class="col">
-                        <a class="btn btn-primary h-100" style="border-radius: 100px; width: 30%;" href="#">Get
-                            Quote Now</a>
-                        <a class="btn btn-secondary" style="width: 30%" href="#">Learn More</a>
-                    </div>
-                    <div class="col"><span> </span></div>
-                </div>
+            <div class="flex flex-col md:flex-row gap-4 items-center">
+              <a class="mr-2" href="#"
+                ><button class="bg-[#23A6F0] text-white py-3 px-6 rounded-full">
+                  Get Quote Now
+                </button></a
+              >
+              <a class="" href="#"
+                ><button
+                  class="p-3.5 text-[#23A6F0] md:text-white rounded-full border border-solid border-[#23A6F0] md:border-white py-3 px-6"
+                >
+                  Learn More
+                </button></a
+              >
             </div>
-        </section>
-        <!---------------------------------------------- Start of Second Section   ----------------------------------------------->
-        <section id="section2">
-            <div class="card-group">
-                <div class="card text-center text-light" id="card">
-                    <img src="./assets/wallet.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title" id="card-title">Peace of Mind</h5>
-                        <p class="card-text">So it really behaves like neither. Now we have given up.</p>
-                    </div>
-                </div>
-                <div class="card text-center text-light" id="card">
-                    <img src="./assets/bookmark.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title" id="card-title">Set For Life</h5>
-                        <p class="card-text">They were used to create machines that launched.</p>
-                    </div>
-                </div>
-                <div class="card text-center text-light" id="card">
-                    <img src="./assets/persons.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title" id="card-title">100% Satisfaction</h5>
-                        <p class="card-text">So it really behaves like neither. Now we have given up.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!---------------------------------------------- Start of Third Section   ----------------------------------------------->
-        <section class= "align-self-center" style="background-color: rgb(142, 194, 242)">
-            <div class="d-flex flex-column py-5">
-                <h1 class="text-center text-light pb-5">
-                    Industry
-                </h1>
-                <p class="text-center text-light w-50 mx-auto">
-                    Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian
-                    mechanics
-                </p>
+          </div>
+          <div class=""></div>
+          <div class=""></div>
+        </div>
+      </section>
+      <!---------------------------------------------- Start of Second Section   ----------------------------------------------->
+      <section class="py-24 bg-[#252B42]" id="section2">
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-14 text-white"
+        >
+          <div
+            class="flex flex-col items-center justify-center text-center gap-3"
+          >
+            <img src="./assets/wallet.svg" class="w-[72px]" alt="..." />
 
+            <h5 class="">Peace of Mind</h5>
+            <p class="w-[25ch]">
+              So it really behaves like neither. Now we have given up.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center gap-4"
+          >
+            <img src="./assets/bookmark.svg" class="w-[72px]" alt="..." />
+
+            <h5 class="">Set For Life</h5>
+            <p class="w-[25ch]">
+              They were used to create the machines that launched.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center gap-4"
+          >
+            <img src="./assets/persons.svg" class="w-[72px]" alt="..." />
+
+            <h5 class="">100% Satisfaction</h5>
+            <p class="w-[25ch]">
+              So it really behaves like neither. Now we have given up.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!---------------------------------------------- Start of Third Section   ----------------------------------------------->
+      <section class="bg-[#8EC2F2] py-28">
+        <div class="text-center text-white pb-20">
+          <h2 class="text-4xl font-bold pb-6">What Clients Say</h2>
+          <p class="w-[25ch] md:w-[45ch] text-sm mx-auto">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-28"
+        >
+          <div class="bg-white py-8 px-10 relative">
+            <img
+              class="w-[72px] absolute top-4 left-[-3rem] hidden md:block"
+              src="./assets/person1.png"
+              alt=""
+            />
+            <div class="">
+              <h5 class="text-[#252B42] text-2xl">Regina Miles</h5>
+              <p class="text-slate-400">Designer</p>
+              <img src="./assets/4stars.jpg" class="w-[130px]" alt="..." />
+              <p class="text-sm w-[23ch] md:w-[37ch] text-slate-400">
+                This proved to be impossible using the traditional concepts of
+                space and time. Einstein developed a new view of time first and
+                then space. This proved to be impossible using the traditional
+                concepts of space and time. Einstein developed a new view of
+                time first and then space.
+              </p>
             </div>
-            <div class="card-group flex-row justify-content-evenly">
-                <div class="d-flex card2 position-relative" style="max-width: 500px;">
-                    <img class="position-absolute top-150 start-50 translate-middle" src="./assets/person1.png" alt=""
-                        style="max-width: 70px; height: 70px;">
-                    <div class="card-body2">
-                        <h5 class="card-title text-start">Regina Miles</h5>
-                        <p class="card-text text-start">Designer</p>
-                        <img src="./assets/4stars.jpg" class="card-img-top d-flex justify-content-start mw-100"
-                            alt="..." style="width: 180px; margin-left: -20px;">
-                        <p class="card-text text-start">This proved to be impossible using the traditional
-                            concepts of space and time. Einstein developed a
-                            new view of time first and then space. This proved
-                            to be impossible using the traditional concepts of
-                            space and time. Einstein developed a new view
-                            of time first and then space.</p>
-                    </div>
-                </div>
-                <div class="d-flex card2 position-relative" style="max-width: 500px;">
-                    <img class="position-absolute top-150 start-50 translate-middle" src="./assets/person2.png" alt=""
-                        style="max-width: 70px; height: 70px; top: 20px;">
-                    <div class="card-body2">
-                        <h5 class="card-title text-start">Regina Miles</h5>
-                        <p class="card-text text-start">Designer</p>
-                        <img src="./assets/4stars.jpg" class="card-img-top d-flex justify-content-start mw-100"
-                            alt="..." style="width: 180px; margin-left: -20px;">
-                        <p class="card-text text-start">This proved to be impossible using the traditional
-                            concepts of space and time. Einstein developed a
-                            new view of time first and then space. This proved
-                            to be impossible using the traditional concepts of
-                            space and time. Einstein developed a new view
-                            of time first and then space.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="bg-white py-8 px-10 relative">
+            <img
+              class="w-[72px] absolute top-4 left-[-3rem] hidden md:block"
+              src="./assets/person2.png"
+              alt=""
+            />
+            <div class="">
+              <h5 class="text-[#252B42] text-2xl">Regina Miles</h5>
+              <p class="text-slate-400">Designer</p>
+              <img src="./assets/4stars.jpg" class="w-[130px]" alt="..." />
+              <p class="text-sm w-[23ch] md:w-[37ch] text-slate-400">
+                This proved to be impossible using the traditional concepts of
+                space and time. Einstein developed a new view of time first and
+                then space. This proved to be impossible using the traditional
+                concepts of space and time. Einstein developed a new view of
+                time first and then space.
+              </p>
             </div>
+          </div>
+        </div>
       </section>
       <!---------------------------------------------- Start of Fourth Section   ----------------------------------------------->
       <section class="py-5" style="background-color: #252b42">
